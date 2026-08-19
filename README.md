@@ -1,48 +1,47 @@
+[English](README.en.md) · **中文**
+
 # REA — Rapid Eye Analysis
 
-Computes eye diagrams straight from S-parameters, with joint FFE / DFE / CTLE optimization and floating-tap search. Handles optical eyes and TDECQ in addition to electrical. Drivable over SCPI for automated test flows.
+> S 参数进，眼图和余量出
 
 从 S 参数直接算眼图：FFE / DFE / CTLE 联合优化，支持浮动抽头搜索。电眼之外也做光眼和 TDECQ。可以 SCPI 远程驱动，接进自动化测试流程。
 
-## 📥 下载 / Download
+## 📥 下载
 
-**本仓库不含软件本体** —— 这是商业软件，源码不公开，仓库只作说明与下载入口。
-This repository does **not** ship the software itself; it is a landing page pointing at the download site.
+**本仓库不含软件本体。** 这是商业软件，源码不公开，仓库只作说明与下载入口。
 
-### ⬇️ [REA_dist_v2_0_6.zip](http://106.14.76.130/REA/2.0.6/REA_dist_v2_0_6.zip)
+### ⬇️ [REA_dist_v2_0_7.zip](http://106.14.76.130/REA/2.0.7/REA_dist_v2_0_7.zip)
 
-| 版本 Version | 大小 Size | 发布 Released |
+| 版本 | 大小 | 发布日期 |
 |---|---|---|
-| v2.0.6 | 178.5 MB | 2026-08-14 |
+| v2.0.7 | 181.7 MB | 2026-08-19 |
 
-下载站首页（全部工具）/ All tools: http://106.14.76.130
+下载站首页（全部工具）：http://106.14.76.130
 
-下载站支持断点续传 / Resumable downloads (HTTP Range) supported.
+下载站支持断点续传（HTTP Range）。
 
-## 🔑 授权 / License
+## 🔑 授权
 
 **商业授权 · 免费试用**
 
 本软件不开源，源码不公开。
-This software is proprietary; the source code is not published.
 
-试用 key 请通过微信公众号「**高速通信杂谈**」后台申请。
-Request a trial key via the WeChat official account **高速通信杂谈**.
+**试用 key 在[下载站](http://106.14.76.130)直接要**：页面右下角的咨询窗口里报一下 Host ID，当场就能拿到。也可以找微信公众号「**高速通信杂谈**」的作者。
 
-## Features / 功能
+## ✨ 功能
 
 `S 参数眼图` · `FFE / DFE / CTLE` · `TDECQ` · `SCPI 远程`
 
-## 技术规格 / Specifications
+## 📋 技术规格
 
 | | |
 |---|---|
-| 授权 | 商业授权；提供免费试用，试用 key 通过公众号后台申请 |
+| 授权 | 商业授权；提供免费试用，试用 key 在页面右下角的咨询窗口报 Host ID 即时领取 |
 | 均衡优化 | FFE / DFE / CTLE · 浮动抽头搜索 |
 | 光眼 | 光眼图 · TDECQ |
 | 远程控制 | SCPI over TCP/IP |
 | 输出 | 眼高 / 眼宽 / 余量 |
 
-## 联系 / Contact
+## 📮 联系
 
-微信公众号 WeChat：**高速通信杂谈**
+微信公众号：**高速通信杂谈**
