@@ -4,7 +4,7 @@
 
 > S 参数进，眼图和余量出
 
-从 S 参数直接算眼图：FFE / DFE / CTLE 联合优化，支持浮动抽头搜索。电眼之外也做光眼和 TDECQ。可以 SCPI 远程驱动，接进自动化测试流程。
+从 S 参数直接算眼图：FFE / DFE / CTLE 联合优化，支持浮动抽头搜索。电眼之外也做光眼和 TDECQ，并给出 FEC 纠错前后的误码率。可以 SCPI 远程驱动，接进自动化测试流程。
 
 ## 📥 下载
 
@@ -30,7 +30,7 @@
 
 ## ✨ 功能
 
-`S 参数眼图` · `FFE / DFE / CTLE` · `TDECQ` · `SCPI 远程`
+`S 参数眼图` · `FFE / DFE / CTLE` · `FEC 前后 BER` · `TDECQ` · `SCPI 远程`
 
 ## 📋 技术规格
 
@@ -39,6 +39,7 @@
 | 授权 | 商业授权；提供免费试用，试用 key 在页面右下角的咨询窗口报 Host ID 即时领取 |
 | 均衡优化 | FFE / DFE / CTLE · 浮动抽头搜索 |
 | 光眼 | 光眼图 · TDECQ |
+| FEC | 纠错前后误码率 · 802.3dj D3.1 / 802.3ck / 802.3bs Cl 119 / Cl 91 KR4 / Cl 74 BASE-R · PCIe 6/7/8 FLIT |
 | 远程控制 | SCPI over TCP/IP |
 | 输出 | 眼高 / 眼宽 / 余量 |
 
