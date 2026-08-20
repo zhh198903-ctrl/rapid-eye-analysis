@@ -4,7 +4,7 @@
 
 > S-parameters in, eye diagram and margin out
 
-Computes eye diagrams straight from S-parameters, with joint FFE / DFE / CTLE optimization and floating-tap search. Handles optical eyes and TDECQ in addition to electrical. Drivable over SCPI for automated test flows.
+Computes eye diagrams straight from S-parameters, with joint FFE / DFE / CTLE optimization and floating-tap search. Handles optical eyes and TDECQ in addition to electrical, and reports pre- and post-FEC BER. Drivable over SCPI for automated test flows.
 
 ## 📥 Download
 
@@ -30,7 +30,7 @@ This software is proprietary; the source code is not published.
 
 ## ✨ Features
 
-`S-parameter eye` · `FFE / DFE / CTLE` · `TDECQ` · `SCPI remote`
+`S-parameter eye` · `FFE / DFE / CTLE` · `Pre/post-FEC BER` · `TDECQ` · `SCPI remote`
 
 ## 📋 Specifications
 
@@ -39,6 +39,7 @@ This software is proprietary; the source code is not published.
 | License | Commercial; free trial available, send your Host ID in the chat box at the bottom right to get a trial key instantly |
 | Equalization | FFE / DFE / CTLE · floating-tap search |
 | Optical | Optical eye · TDECQ |
+| FEC | BER before and after correction · 802.3dj D3.1 / 802.3ck / 802.3bs Cl 119 / Cl 91 KR4 / Cl 74 BASE-R · PCIe 6/7/8 FLIT |
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
