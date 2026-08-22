@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters, with joint FFE / DFE / CTLE op
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_11.zip](http://106.14.76.130/REA/2.0.11/REA_dist_v2_0_11.zip)
+### ⬇️ [REA_dist_v2_0_12.zip](http://106.14.76.130/REA/2.0.12/REA_dist_v2_0_12.zip)
 
 | Version | Size | Released |
 |---|---|---|
-| v2.0.11 | 181.8 MB | 2026-08-22 |
+| v2.0.12 | 181.8 MB | 2026-08-23 |
 
 All tools: http://106.14.76.130
 
