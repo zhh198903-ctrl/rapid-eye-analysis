@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters, with joint FFE / DFE / CTLE op
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_12.zip](http://106.14.76.130/REA/2.0.12/REA_dist_v2_0_12.zip)
+### ⬇️ [REA_dist_v2_0_13.zip](http://106.14.76.130/REA/2.0.13/REA_dist_v2_0_13.zip)
 
 | Version | Size | Released |
 |---|---|---|
-| v2.0.12 | 181.8 MB | 2026-08-23 |
+| v2.0.13 | 181.9 MB | 2026-08-23 |
 
 All tools: http://106.14.76.130
 
@@ -39,7 +39,8 @@ This software is proprietary; the source code is not published.
 | License | Commercial; free trial available, send your Host ID in the chat box at the bottom right to get a trial key instantly |
 | Equalization | FFE / DFE / CTLE · floating-tap search |
 | Optical | Optical eye · TDECQ |
-| FEC | BER before and after correction · 802.3dj D3.1 / 802.3ck / 802.3bs Cl 119 / Cl 91 KR4 / Cl 74 BASE-R · PCIe 6/7/8 FLIT |
+| Patterns | PRBS7-31 · PRBSnQ (Gray quaternary) · SSPR / SSPRQ · custom |
+| FEC | BER before and after correction · 802.3dj D3.1 / 802.3ck / 802.3bs Cl 119 / Cl 91 KR4 / Cl 74 BASE-R · PCIe 6/7/8 FLIT · 802.3dj IM-DD optical Inner FEC (TDECQ reference-equalized eye) |
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
