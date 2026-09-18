@@ -4,17 +4,17 @@
 
 > S 参数进，眼图和余量出
 
-从 S 参数直接算眼图：FFE / DFE / CTLE 联合优化，支持浮动抽头搜索。电眼之外也做光眼和 TDECQ，并给出 FEC 纠错前后的误码率。可以 SCPI 远程驱动，接进自动化测试流程。
+从 S 参数直接算眼图：FFE / DFE / CTLE 联合优化，支持浮动抽头搜索。电眼之外也做光眼、TDECQ 与 EECQ，并给出 FEC 纠错前后的误码率。可以 SCPI 远程驱动，接进自动化测试流程。
 
 ## 📥 下载
 
 **本仓库不含软件本体。** 这是商业软件，源码不公开，仓库只作说明与下载入口。
 
-### ⬇️ [REA_dist_v2_0_15.zip](http://106.14.76.130/REA/2.0.15/REA_dist_v2_0_15.zip)
+### ⬇️ [REA_dist_v2_0_16.zip](http://106.14.76.130/REA/2.0.16/REA_dist_v2_0_16.zip)
 
-| 版本 | 大小 | 发布日期 |
-|---|---|---|
-| v2.0.15 | 179.6 MB | 2026-08-30 |
+| 版本 | 大小 | 发布日期 | SHA-256 |
+|---|---|---|---|
+| v2.0.16 | 177.5 MB | 2026-09-18 | `4834dc38adb2a4c8ff288d7c5a2484d2538fe42987cc03825301c90014fc260f` |
 
 下载站首页（全部工具）：http://106.14.76.130
 
@@ -30,15 +30,16 @@
 
 ## ✨ 功能
 
-`S 参数眼图` · `FFE / DFE / CTLE` · `FEC 前后 BER` · `TDECQ` · `SCPI 远程`
+`S 参数眼图` · `FFE / DFE / CTLE` · `FEC 前后 BER` · `TDECQ` · `SCPI 远程` · `EECQ` · `IBIS-AMI`
 
 ## 📋 技术规格
 
 | | |
 |---|---|
 | 授权 | 商业授权；提供免费试用，试用 key 在页面右下角的咨询窗口报 Host ID 即时领取 |
-| 均衡优化 | FFE / DFE / CTLE · 浮动抽头搜索 |
-| 光眼 | 光眼图 · TDECQ |
+| 均衡优化 | FFE / DFE / CTLE · 浮动抽头搜索 · FFE+DFE 联合求解 (802.3dj 200G 光口 / CEI TP4 EECQ) |
+| 光眼 | 光眼图 · TDECQ · EECQ |
+| 器件模型 | IBIS 8.0 / IBIS-AMI (专家模式节点) |
 | 码型 | PRBS7–31 · PRBSnQ（Gray 四进制）· SSPR / SSPRQ · 自定义 |
 | FEC | 纠错前后误码率 · 802.3dj D3.1 / 802.3ck / 802.3bs Cl 119 / Cl 91 KR4 / Cl 74 BASE-R · PCIe 6/7/8 FLIT · 802.3dj IM-DD 光口 Inner FEC（TDECQ 均衡眼口径） |
 | 远程控制 | SCPI over TCP/IP |
