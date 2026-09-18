@@ -4,17 +4,17 @@
 
 > S-parameters in, eye diagram and margin out
 
-Computes eye diagrams straight from S-parameters, with joint FFE / DFE / CTLE optimization and floating-tap search. Handles optical eyes and TDECQ in addition to electrical, and reports pre- and post-FEC BER. Drivable over SCPI for automated test flows.
+Computes eye diagrams straight from S-parameters, with joint FFE / DFE / CTLE optimization and floating-tap search. Handles optical eyes, TDECQ and EECQ in addition to electrical, and reports pre- and post-FEC BER. Drivable over SCPI for automated test flows.
 
 ## 📥 Download
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_15.zip](http://106.14.76.130/REA/2.0.15/REA_dist_v2_0_15.zip)
+### ⬇️ [REA_dist_v2_0_16.zip](http://106.14.76.130/REA/2.0.16/REA_dist_v2_0_16.zip)
 
-| Version | Size | Released |
-|---|---|---|
-| v2.0.15 | 179.6 MB | 2026-08-30 |
+| Version | Size | Released | SHA-256 |
+|---|---|---|---|
+| v2.0.16 | 177.5 MB | 2026-09-18 | `4834dc38adb2a4c8ff288d7c5a2484d2538fe42987cc03825301c90014fc260f` |
 
 All tools: http://106.14.76.130
 
@@ -30,15 +30,16 @@ This software is proprietary; the source code is not published.
 
 ## ✨ Features
 
-`S-parameter eye` · `FFE / DFE / CTLE` · `Pre/post-FEC BER` · `TDECQ` · `SCPI remote`
+`S-parameter eye` · `FFE / DFE / CTLE` · `Pre/post-FEC BER` · `TDECQ` · `SCPI remote` · `EECQ` · `IBIS-AMI`
 
 ## 📋 Specifications
 
 | | |
 |---|---|
 | License | Commercial; free trial available, send your Host ID in the chat box at the bottom right to get a trial key instantly |
-| Equalization | FFE / DFE / CTLE · floating-tap search |
-| Optical | Optical eye · TDECQ |
+| Equalization | FFE / DFE / CTLE · floating-tap search · joint FFE+DFE solution (802.3dj 200G optics / CEI TP4 EECQ) |
+| Optical | Optical eye · TDECQ · EECQ |
+| Device models | IBIS 8.0 / IBIS-AMI (Expert-mode node) |
 | Patterns | PRBS7-31 · PRBSnQ (Gray quaternary) · SSPR / SSPRQ · custom |
 | FEC | BER before and after correction · 802.3dj D3.1 / 802.3ck / 802.3bs Cl 119 / Cl 91 KR4 / Cl 74 BASE-R · PCIe 6/7/8 FLIT · 802.3dj IM-DD optical Inner FEC (TDECQ reference-equalized eye) |
 | Remote control | SCPI over TCP/IP |
@@ -46,4 +47,4 @@ This software is proprietary; the source code is not published.
 
 ## 📮 Contact
 
-WeChat official account: **高速通信杂谈** (High-Speed Comms Notes)
+WeChat official account: **高速通信杂谈**
