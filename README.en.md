@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters, with joint FFE / DFE / CTLE op
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_16.zip](http://106.14.76.130/REA/2.0.16/REA_dist_v2_0_16.zip)
+### ⬇️ [REA_dist_v2_0_17.zip](http://106.14.76.130/REA/2.0.17/REA_dist_v2_0_17.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.16 | 177.5 MB | 2026-09-18 | `4834dc38adb2a4c8ff288d7c5a2484d2538fe42987cc03825301c90014fc260f` |
+| v2.0.17 | 177.6 MB | 2026-09-20 | `b36be43d7096e6fe26fd465ca1f7af58995f73dc03c56343e0a332eebd703da8` |
 
 All tools: http://106.14.76.130
 
@@ -37,7 +37,7 @@ This software is proprietary; the source code is not published.
 | | |
 |---|---|
 | License | Commercial; free trial available, send your Host ID in the chat box at the bottom right to get a trial key instantly |
-| Equalization | FFE / DFE / CTLE · floating-tap search · joint FFE+DFE solution (802.3dj 200G optics / CEI TP4 EECQ) |
+| Equalization | FFE / DFE / CTLE · floating-tap search · joint FFE+DFE solution (802.3dj 200G optics / CEI TP4 EECQ) · true-COM CTLE bypass re-check · grid-search candidate cap |
 | Optical | Optical eye · TDECQ · EECQ |
 | Device models | IBIS 8.0 / IBIS-AMI (Expert-mode node) |
 | Patterns | PRBS7-31 · PRBSnQ (Gray quaternary) · SSPR / SSPRQ · custom |
