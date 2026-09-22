@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters, with joint FFE / DFE / CTLE op
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_17.zip](http://106.14.76.130/REA/2.0.17/REA_dist_v2_0_17.zip)
+### ⬇️ [REA_dist_v2_0_18.zip](http://106.14.76.130/REA/2.0.18/REA_dist_v2_0_18.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.17 | 177.6 MB | 2026-09-20 | `b36be43d7096e6fe26fd465ca1f7af58995f73dc03c56343e0a332eebd703da8` |
+| v2.0.18 | 186.4 MB | 2026-09-22 | `031e9f7a5e65652c55c9777a8950bade4b63bcb7407a57903f7a3ff54b933046` |
 
 All tools: http://106.14.76.130
 
@@ -37,7 +37,7 @@ This software is proprietary; the source code is not published.
 | | |
 |---|---|
 | License | Commercial; free trial available, send your Host ID in the chat box at the bottom right to get a trial key instantly |
-| Equalization | FFE / DFE / CTLE · floating-tap search · joint FFE+DFE solution (802.3dj 200G optics / CEI TP4 EECQ) · true-COM CTLE bypass re-check · grid-search candidate cap |
+| Equalization | FFE / DFE / CTLE · floating-tap search · joint FFE+DFE solution (802.3dj 200G optics / CEI TP4 EECQ) · true-COM CTLE bypass re-check · grid-search candidate cap · 802.3 family presets carry tap limits |
 | Optical | Optical eye · TDECQ · EECQ |
 | Device models | IBIS 8.0 / IBIS-AMI (Expert-mode node) |
 | Patterns | PRBS7-31 · PRBSnQ (Gray quaternary) · SSPR / SSPRQ · custom |
