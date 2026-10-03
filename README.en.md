@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_23.zip](http://106.14.76.130/REA/2.0.23/REA_dist_v2_0_23.zip)
+### ⬇️ [REA_dist_v2_0_24.zip](http://106.14.76.130/REA/2.0.24/REA_dist_v2_0_24.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.23 | 189.1 MB | 2026-10-03 | `b493d86ba06bbabecc8007daf3f0d96329bcf36166682028797b2663ea1fdddd` |
+| v2.0.24 | 188.2 MB | 2026-10-04 | `4bc068c01e49c36e8a24feebcd821ebefa7987ef29c32fb0d6d3c8f92841bd01` |
 
 All tools: http://106.14.76.130
 
@@ -45,6 +45,13 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.24 changes
+
+- Refine Normal and Expert parameter columns, typography and controls; expand EQ bounds on demand, group noise by injection point, and keep toolbar labels with their inputs when wrapping.
+- Rework both Quick Start guides from the first eye through equalization, interference, saved configurations, Expert and FEC, with screenshots of reproduced results.
+- Add ready-to-load optical TDECQ and IBIS-AMI demonstration configurations, explicit baseline restoration and executable SCPI examples.
+- Fix CTLE preset reflection replacing saved TX FFE taps on SCPI configuration loads, stale DFE taps, missing automatic baseline eyes after COM import and portable demo paths.
 
 ## v2.0.23 changes
 
