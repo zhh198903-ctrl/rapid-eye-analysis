@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_22.zip](http://106.14.76.130/REA/2.0.22/REA_dist_v2_0_22.zip)
+### ⬇️ [REA_dist_v2_0_23.zip](http://106.14.76.130/REA/2.0.23/REA_dist_v2_0_23.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.22 | 188.5 MB | 2026-10-02 | `ac86209de84ca50878e38f7505bdc326fc570b1f0dd94a06a0f9d02e24d2a59c` |
+| v2.0.23 | 189.1 MB | 2026-10-03 | `b493d86ba06bbabecc8007daf3f0d96329bcf36166682028797b2663ea1fdddd` |
 
 All tools: http://106.14.76.130
 
@@ -45,6 +45,14 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.23 changes
+
+- Keep Generate, Pause and Stop at the bottom, with F5 support. Separate signal chain, measurements / FEC and results so long results do not displace parameters.
+- Align labels and size inputs consistently, remove empty space after stage changes, and use explicit Enable switches for stage state.
+- Review FEC against IEEE 802.3dj D3.1, correct extreme-error probability results and limit-boundary decisions, and identify the Inner FEC hard-decision estimate.
+- Refresh existing FEC results, charts, progress, settings dialogs and dynamic menus on language changes while preserving parameters and run state.
+- Synchronize Normal / Expert run and optimizer controls. Expert asynchronous RUN remains controllable from one connection, and GUI-generated results are queryable; FEC / MLSE, save / load and open parameter dialogs stay synchronized.
 
 ## v2.0.22 changes
 
