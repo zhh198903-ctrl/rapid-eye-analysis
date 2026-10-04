@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_24.zip](http://106.14.76.130/REA/2.0.24/REA_dist_v2_0_24.zip)
+### ⬇️ [REA_dist_v2_0_25.zip](http://106.14.76.130/REA/2.0.25/REA_dist_v2_0_25.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.24 | 188.2 MB | 2026-10-04 | `4bc068c01e49c36e8a24feebcd821ebefa7987ef29c32fb0d6d3c8f92841bd01` |
+| v2.0.25 | 188.2 MB | 2026-10-04 | `6a80768566dac6365bb282be6f04e391b7b14e64cba2295e81ca6210242543d7` |
 
 All tools: http://106.14.76.130
 
@@ -45,6 +45,13 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.25 changes
+
+- Preserve frequency-dependent and per-port reference impedances during interpolation, cascade, de-embedding and Touchstone export.
+- Any eye-mask hit fails the measurement. Missing eye data is reported explicitly and cannot produce an overall pass.
+- Keep concurrent feedback-history updates. Storage errors retain pending replies, show a message and retry automatically.
+- Update bilingual manuals and activation guidance to use the complete supplied key, and clarify that measured MLSE is not yet released.
 
 ## v2.0.24 changes
 
