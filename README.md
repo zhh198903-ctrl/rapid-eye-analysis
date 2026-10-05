@@ -10,11 +10,11 @@
 
 **本仓库不含软件本体。** 这是商业软件，源码不公开，仓库只作说明与下载入口。
 
-### ⬇️ [REA_dist_v2_0_25.zip](http://106.14.76.130/REA/2.0.25/REA_dist_v2_0_25.zip)
+### ⬇️ [REA_dist_v2_0_26.zip](http://106.14.76.130/REA/2.0.26/REA_dist_v2_0_26.zip)
 
 | 版本 | 大小 | 发布日期 | SHA-256 |
 |---|---|---|---|
-| v2.0.25 | 188.2 MB | 2026-10-04 | `6a80768566dac6365bb282be6f04e391b7b14e64cba2295e81ca6210242543d7` |
+| v2.0.26 | 188.3 MB | 2026-10-05 | `7f282d2f915b2e59a80324c9de44a4f2d3613fcf507bf3ccae46871a26520e31` |
 
 下载站首页（全部工具）：http://106.14.76.130
 
@@ -22,9 +22,9 @@
 
 ### 配套 AI skill（Claude Code / Codex）
 
-[下载 REA skill v2.0.25](http://106.14.76.130/REA-Skill/2.0.25/REA-Skill_dist_v2_0_25.zip) · 105.9 kB · SHA-256：`bf6e620b291b78437fcafd1d70b871e35d8b3bc62f47bd16b5b44c217cf42239`
+[下载 REA skill v2.0.26](http://106.14.76.130/REA-Skill/2.0.26/REA-Skill_dist_v2_0_26.zip) · 107.0 kB · SHA-256：`35f3d81c1ed2faa8b7640abd33de9844b96520ae2f7ebc92ba98eeee4c8464e2`
 
-解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.25 同步，安装它不改变 REA 的商业授权要求。
+解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.26 同步，安装它不改变 REA 的商业授权要求。
 
 ## 🔑 授权
 
@@ -51,6 +51,16 @@
 | 远程控制 | SCPI over TCP/IP |
 | 输出 | 眼高 / 眼宽 / 余量 |
 
+
+## v2.0.26 更新
+
+- 优化大规模 CPU/GPU 眼图指标计算，在已验证场景中保留原有测量结果。
+- 修正光电模型的频率相位和有限带宽处理；指定频响文件不可用时明确报错并停止计算。
+- 浴盆图缺少子眼数据时保留有效曲线，明确显示数据不足和总体开口不可用；越界眼号返回空响应，并修复 Expert 浴盆详情的双击打开。
+- 修复快速清空、切换文件时旧结果回填或待加载文件停滞的问题。
+- 完善 DFE 边界检查和零抽头处理，并修复可选 GPU 安装助手的错误反馈及运行库加载。
+- 修复反馈记录首次被多个进程同时打开时的加锁失败，保留并发写入的记录。
+- 同步更新中英文手册、快速入门和 REA SCPI 技能说明。
 
 ## v2.0.25 更新
 

@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_25.zip](http://106.14.76.130/REA/2.0.25/REA_dist_v2_0_25.zip)
+### ⬇️ [REA_dist_v2_0_26.zip](http://106.14.76.130/REA/2.0.26/REA_dist_v2_0_26.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.25 | 188.2 MB | 2026-10-04 | `6a80768566dac6365bb282be6f04e391b7b14e64cba2295e81ca6210242543d7` |
+| v2.0.26 | 188.3 MB | 2026-10-05 | `7f282d2f915b2e59a80324c9de44a4f2d3613fcf507bf3ccae46871a26520e31` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.25](http://106.14.76.130/REA-Skill/2.0.25/REA-Skill_dist_v2_0_25.zip) · 105.9 kB · SHA-256: `bf6e620b291b78437fcafd1d70b871e35d8b3bc62f47bd16b5b44c217cf42239`
+[Download REA skill v2.0.26](http://106.14.76.130/REA-Skill/2.0.26/REA-Skill_dist_v2_0_26.zip) · 107.0 kB · SHA-256: `35f3d81c1ed2faa8b7640abd33de9844b96520ae2f7ebc92ba98eeee4c8464e2`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.25 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.26 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,16 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.26 changes
+
+- Improve large CPU/GPU eye-metric calculations while preserving measurement results in the validated scenarios.
+- Correct frequency phase and finite-bandwidth handling in optical models. An unusable specified response file reports an error and stops the calculation.
+- Keep usable bathtub curves while clearly reporting missing eye data and unavailable overall opening. Out-of-range eye queries return an empty response; double-click access to Expert bathtub details is fixed.
+- Prevent stale results or stalled queued loads when files are rapidly cleared or switched.
+- Improve DFE boundary checks and zero-tap handling, and fix optional GPU setup error reporting and runtime loading.
+- Fix first-use feedback history locking when multiple processes open the same file, preserving concurrent entries.
+- Update the bilingual manuals, Quick Start guides and companion REA SCPI skill.
 
 ## v2.0.25 changes
 
