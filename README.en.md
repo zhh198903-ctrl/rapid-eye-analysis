@@ -20,6 +20,12 @@ All tools: http://106.14.76.130
 
 The download site supports resumable downloads (HTTP Range).
 
+### Companion AI skill (Claude Code / Codex)
+
+[Download REA skill v2.0.25](http://106.14.76.130/REA-Skill/2.0.25/REA-Skill_dist_v2_0_25.zip) · 105.9 kB · SHA-256: `bf6e620b291b78437fcafd1d70b871e35d8b3bc62f47bd16b5b44c217cf42239`
+
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.25 and does not change REA licensing requirements.
+
 ## 🔑 License
 
 **Commercial · free trial**

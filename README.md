@@ -20,6 +20,12 @@
 
 下载站支持断点续传（HTTP Range）。
 
+### 配套 AI skill（Claude Code / Codex）
+
+[下载 REA skill v2.0.25](http://106.14.76.130/REA-Skill/2.0.25/REA-Skill_dist_v2_0_25.zip) · 105.9 kB · SHA-256：`bf6e620b291b78437fcafd1d70b871e35d8b3bc62f47bd16b5b44c217cf42239`
+
+解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.25 同步，安装它不改变 REA 的商业授权要求。
+
 ## 🔑 授权
 
 **商业授权 · 免费试用**
