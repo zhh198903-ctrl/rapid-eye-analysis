@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_26.zip](http://106.14.76.130/REA/2.0.26/REA_dist_v2_0_26.zip)
+### ⬇️ [REA_dist_v2_0_27.zip](http://106.14.76.130/REA/2.0.27/REA_dist_v2_0_27.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.26 | 188.3 MB | 2026-10-05 | `7f282d2f915b2e59a80324c9de44a4f2d3613fcf507bf3ccae46871a26520e31` |
+| v2.0.27 | 188.6 MB | 2026-10-07 | `b885fac041cedf4cbea5de62f933fdea8d8a057c4e1395c42463ac56100d5356` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.26](http://106.14.76.130/REA-Skill/2.0.26/REA-Skill_dist_v2_0_26.zip) · 107.0 kB · SHA-256: `35f3d81c1ed2faa8b7640abd33de9844b96520ae2f7ebc92ba98eeee4c8464e2`
+[Download REA skill v2.0.27](http://106.14.76.130/REA-Skill/2.0.27/REA-Skill_dist_v2_0_27.zip) · 109.7 kB · SHA-256: `90e9e3a68aa2876c98d0622123af7b3b64622e55e22e6423b2729faecac30ff5`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.26 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.27 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,24 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.27 changes
+
+- Separate bathtub curves into rows by eye number, with phase and voltage panels for each eye and placeholders for missing eyes.
+- Switch Expert bathtub probes with the picker or result table; show one probe at a time with all its eyes visible.
+- Correct missing Chinese glyphs in bathtub titles, notes and legends across probe switches, language changes and detail windows.
+- Adapt bathtub axes to valid data, distinguish measured and extrapolated curves, and restore adaptive limits with Home.
+- Move Expert plot controls into a secondary window and simplify the main toolbar; retain appearance, annotation and decision settings after closing.
+- Drag the BER line to adjust all eyes continuously and read their EH/EW at the shared target; release restores adaptive bounds.
+- Refresh bathtub plots immediately after a target BER change, synchronizing Normal, Expert and open detail views.
+- Synchronize GUI edits of floating equalizers, levels, RX rise time and CDR overrides with SCPI queries; improve frequency-offset precision and DFE tap-count readback.
+- Fix overlapping PCB title controls and optical schematic labels; synchronize package, measurement-condition and DFE-step edits with queries.
+- Use consistent compact input widths and alignment in signal ports, TX/RX FFE, DFE, package and CDR grids; show full preset names in the popup without widening the window.
+- Translate open parameter, feedback, update, Marker, axis, AMI, crosstalk, COM-import and About windows while retaining drafts and task progress; cache diagrams by language and retain English Signal and Filter button names. Translate loaded file summaries, trace groups, timings and Smith toolbar controls while retaining data and recorded times.
+- Synchronize rebuilt TX FFE, RX FFE and DFE tap edits with existing SCPI queries even for bypassed stages; wrap captions in narrow bathtub views.
+- Update bilingual manuals, Quick Start guides and the REA SCPI skill while preserving existing commands and calculation results.
+- Translate plot-layout and figure-options dialogs, axis-picker buttons and scale choices while preserving drafts, canonical scale types and plot data.
+- Own the value-export window under its layout editor so it remains usable in modal eye details; release custom layout items when their parent is destroyed.
 
 ## v2.0.26 changes
 
