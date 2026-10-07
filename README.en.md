@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_27.zip](http://106.14.76.130/REA/2.0.27/REA_dist_v2_0_27.zip)
+### ⬇️ [REA_dist_v2_0_28.zip](http://106.14.76.130/REA/2.0.28/REA_dist_v2_0_28.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.27 | 188.6 MB | 2026-10-07 | `b885fac041cedf4cbea5de62f933fdea8d8a057c4e1395c42463ac56100d5356` |
+| v2.0.28 | 246.3 MB | 2026-10-08 | `17e90e4a868e439315d3f033a6b640d383803f310b842086166198fc63b00445` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.27](http://106.14.76.130/REA-Skill/2.0.27/REA-Skill_dist_v2_0_27.zip) · 109.7 kB · SHA-256: `90e9e3a68aa2876c98d0622123af7b3b64622e55e22e6423b2729faecac30ff5`
+[Download REA skill v2.0.28](http://106.14.76.130/REA-Skill/2.0.28/REA-Skill_dist_v2_0_28.zip) · 110.6 kB · SHA-256: `00815385740a9ecfaf5fc4f3677a3af3360d8cf81378153d93ad7301645fec5f`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.27 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.28 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,14 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.28 changes
+
+- Improve multi-group Floating FFE placement by comparing complete tap layouts and coefficients; confirm gains with a regenerated eye.
+- Align noise budgets and floating-tap constraints across the GUI, SCPI and Normal-to-Expert copying.
+- Preserve floating FFE/DFE coefficients, positions and decision timing in saved configurations, clear stale layouts, and align loaded channel paths for display and copying.
+- Bundle Floating FFE S-parameter examples, reproducible configurations, reference images and a file guide.
+- Apply the incoming channel rate limit when loading configurations, avoiding silent clipping by the previous channel limit.
 
 ## v2.0.27 changes
 

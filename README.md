@@ -10,11 +10,11 @@
 
 **本仓库不含软件本体。** 这是商业软件，源码不公开，仓库只作说明与下载入口。
 
-### ⬇️ [REA_dist_v2_0_27.zip](http://106.14.76.130/REA/2.0.27/REA_dist_v2_0_27.zip)
+### ⬇️ [REA_dist_v2_0_28.zip](http://106.14.76.130/REA/2.0.28/REA_dist_v2_0_28.zip)
 
 | 版本 | 大小 | 发布日期 | SHA-256 |
 |---|---|---|---|
-| v2.0.27 | 188.6 MB | 2026-10-07 | `b885fac041cedf4cbea5de62f933fdea8d8a057c4e1395c42463ac56100d5356` |
+| v2.0.28 | 246.3 MB | 2026-10-08 | `17e90e4a868e439315d3f033a6b640d383803f310b842086166198fc63b00445` |
 
 下载站首页（全部工具）：http://106.14.76.130
 
@@ -22,9 +22,9 @@
 
 ### 配套 AI skill（Claude Code / Codex）
 
-[下载 REA skill v2.0.27](http://106.14.76.130/REA-Skill/2.0.27/REA-Skill_dist_v2_0_27.zip) · 109.7 kB · SHA-256：`90e9e3a68aa2876c98d0622123af7b3b64622e55e22e6423b2729faecac30ff5`
+[下载 REA skill v2.0.28](http://106.14.76.130/REA-Skill/2.0.28/REA-Skill_dist_v2_0_28.zip) · 110.6 kB · SHA-256：`00815385740a9ecfaf5fc4f3677a3af3360d8cf81378153d93ad7301645fec5f`
 
-解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.27 同步，安装它不改变 REA 的商业授权要求。
+解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.28 同步，安装它不改变 REA 的商业授权要求。
 
 ## 🔑 授权
 
@@ -51,6 +51,14 @@
 | 远程控制 | SCPI over TCP/IP |
 | 输出 | 眼高 / 眼宽 / 余量 |
 
+
+## v2.0.28 更新
+
+- 改善多组 Floating FFE 的选位，按整套位置与系数比较候选；收益以重新生成的眼图为准。
+- 修复部分噪声预算和浮动抽头约束在 GUI、SCPI 与 Normal 到 Expert 复制时不一致的问题。
+- 保存与加载配置时保留浮动 FFE／DFE 的系数、位置及判决时间，避免旧布局残留；修复加载后通道路径显示和复制不一致。
+- 随包增加 Floating FFE 专题的 S 参数、可复现配置、参考图片与文件说明。
+- 载入配置按新通道应用数据率上限，避免沿用旧通道上限而静默截断速率。
 
 ## v2.0.27 更新
 
