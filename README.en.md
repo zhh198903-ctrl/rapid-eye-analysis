@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_29.zip](http://106.14.76.130/REA/2.0.29/REA_dist_v2_0_29.zip)
+### ⬇️ [REA_dist_v2_0_30.zip](http://106.14.76.130/REA/2.0.30/REA_dist_v2_0_30.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.29 | 246.3 MB | 2026-10-10 | `447c488f75117afb3363987d93c6f5a312d353ea15f2bc2277443ff8d807e0cf` |
+| v2.0.30 | 246.4 MB | 2026-10-10 | `cec878a69763fee15193d99dd5ac2f92e6b905da4fb871f79e2898e5fe573458` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.29](http://106.14.76.130/REA-Skill/2.0.29/REA-Skill_dist_v2_0_29.zip) · 111.0 kB · SHA-256: `e11d360d1405922652d7eb29de3f544d3398e02a18aa2016a03e589389fb8cda`
+[Download REA skill v2.0.30](http://106.14.76.130/REA-Skill/2.0.30/REA-Skill_dist_v2_0_30.zip) · 111.2 kB · SHA-256: `5512a63694c401aaac14aee265e640566bba3ec597f1d047c2bed0d266de0f72`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.29 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.30 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,11 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.30 changes
+
+- Fix an artificial initial spike in some lowpass transmission impulse responses, including responses with edge smoothing.
+- Clarify bilingual TDR/TDT guidance: distinguish step, impulse and reference amplitude, and match input grids, ports and display conditions for comparisons.
 
 ## v2.0.29 changes
 
