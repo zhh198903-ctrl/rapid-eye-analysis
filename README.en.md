@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_28.zip](http://106.14.76.130/REA/2.0.28/REA_dist_v2_0_28.zip)
+### ⬇️ [REA_dist_v2_0_29.zip](http://106.14.76.130/REA/2.0.29/REA_dist_v2_0_29.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.28 | 246.3 MB | 2026-10-08 | `17e90e4a868e439315d3f033a6b640d383803f310b842086166198fc63b00445` |
+| v2.0.29 | 246.3 MB | 2026-10-10 | `447c488f75117afb3363987d93c6f5a312d353ea15f2bc2277443ff8d807e0cf` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.28](http://106.14.76.130/REA-Skill/2.0.28/REA-Skill_dist_v2_0_28.zip) · 110.6 kB · SHA-256: `00815385740a9ecfaf5fc4f3677a3af3360d8cf81378153d93ad7301645fec5f`
+[Download REA skill v2.0.29](http://106.14.76.130/REA-Skill/2.0.29/REA-Skill_dist_v2_0_29.zip) · 111.0 kB · SHA-256: `e11d360d1405922652d7eb29de3f544d3398e02a18aa2016a03e589389fb8cda`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.28 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.29 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,14 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.29 changes
+
+- Fix errors when clicking Select all / Deselect all for trace groups in Cascade, Deembed and Splitter; each action affects its own group.
+- Return SCPI errors immediately for a missing splitter input or invalid ratio sum, avoiding modal blocking; retain GUI validation prompts.
+- Update S-parameter window titles, cached plot labels and trace groups when switching language; preserve selected traces and zoom.
+- Preserve the selected conversion output and port order when switching language, preventing errors in existing previews.
+- Clarify the complete splitter ratio list in bilingual documentation and REA-Skill; no SCPI commands are added.
 
 ## v2.0.28 changes
 
