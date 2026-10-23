@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_30.zip](http://106.14.76.130/REA/2.0.30/REA_dist_v2_0_30.zip)
+### ⬇️ [REA_dist_v2_0_31.zip](http://106.14.76.130/REA/2.0.31/REA_dist_v2_0_31.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.30 | 246.4 MB | 2026-10-10 | `cec878a69763fee15193d99dd5ac2f92e6b905da4fb871f79e2898e5fe573458` |
+| v2.0.31 | 246.6 MB | 2026-10-23 | `9dd37149f98ee811758aef82e3cc248831dc13dfbc382666e9558505720a5863` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.30](http://106.14.76.130/REA-Skill/2.0.30/REA-Skill_dist_v2_0_30.zip) · 111.2 kB · SHA-256: `5512a63694c401aaac14aee265e640566bba3ec597f1d047c2bed0d266de0f72`
+[Download REA skill v2.0.31](http://106.14.76.130/REA-Skill/2.0.31/REA-Skill_dist_v2_0_31.zip) · 114.6 kB · SHA-256: `d7e36212ccb9736cd25e598cbbe71134462e2bcf40d897af4440d2795e4cb76b`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.30 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.31 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,16 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.31 changes
+
+- Correct S-parameter reference impedance, wave definitions and port direction while retaining original frequency nodes and physical references.
+- Improve split phase continuity and numerical checks, and correct result display in the verified cases.
+- Fix issues in failed file loads, Reset, trace selection, language switching and window layout.
+- Correct summary selection for equal-height eyes on CPU and GPU while preserving waveforms and sampling.
+- Synchronize bilingual guidance and REA-Skill, state the verified scope and existing waivers, and retain optional GPU installation.
+
+Version 2.0.31 corrects S-parameter reference-impedance, wave-definition and port-direction handling, and improves splitting, loading, Reset, error feedback and trace display. Cross-tool consistency applies only to verified inputs, original frequency nodes and specified settings. The 450-ohm profile, actual common PLTS DC/STEP/Custom/window and gating settings, AFR fixture extraction, and the exact error-modal desktop sequence with other-slot requests queued before Reset remain incompletely accepted. These existing cases have user-authorized release waivers, not numerical passes. GPU installation remains optional.
 
 ## v2.0.30 changes
 

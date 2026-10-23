@@ -10,11 +10,11 @@
 
 **本仓库不含软件本体。** 这是商业软件，源码不公开，仓库只作说明与下载入口。
 
-### ⬇️ [REA_dist_v2_0_30.zip](http://106.14.76.130/REA/2.0.30/REA_dist_v2_0_30.zip)
+### ⬇️ [REA_dist_v2_0_31.zip](http://106.14.76.130/REA/2.0.31/REA_dist_v2_0_31.zip)
 
 | 版本 | 大小 | 发布日期 | SHA-256 |
 |---|---|---|---|
-| v2.0.30 | 246.4 MB | 2026-10-10 | `cec878a69763fee15193d99dd5ac2f92e6b905da4fb871f79e2898e5fe573458` |
+| v2.0.31 | 246.6 MB | 2026-10-23 | `9dd37149f98ee811758aef82e3cc248831dc13dfbc382666e9558505720a5863` |
 
 下载站首页（全部工具）：http://106.14.76.130
 
@@ -22,9 +22,9 @@
 
 ### 配套 AI skill（Claude Code / Codex）
 
-[下载 REA skill v2.0.30](http://106.14.76.130/REA-Skill/2.0.30/REA-Skill_dist_v2_0_30.zip) · 111.2 kB · SHA-256：`5512a63694c401aaac14aee265e640566bba3ec597f1d047c2bed0d266de0f72`
+[下载 REA skill v2.0.31](http://106.14.76.130/REA-Skill/2.0.31/REA-Skill_dist_v2_0_31.zip) · 114.6 kB · SHA-256：`d7e36212ccb9736cd25e598cbbe71134462e2bcf40d897af4440d2795e4cb76b`
 
-解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.30 同步，安装它不改变 REA 的商业授权要求。
+解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.31 同步，安装它不改变 REA 的商业授权要求。
 
 ## 🔑 授权
 
@@ -51,6 +51,16 @@
 | 远程控制 | SCPI over TCP/IP |
 | 输出 | 眼高 / 眼宽 / 余量 |
 
+
+## v2.0.31 更新
+
+- 修正 S 参数参考阻抗、波定义及端口方向处理，保留原频点和物理参考信息。
+- 改善分割的相位连续性和数值检查，修正受验证案例中的结果显示。
+- 修正文件加载失败、Reset、曲线选择、语言切换及窗口布局中的多项问题。
+- 修正等高眼在 CPU 与 GPU 下的汇总选择，保留原波形和采样。
+- 同步中英文说明与 REA-Skill，明确验证范围和现有豁免项；GPU 保持可选安装。
+
+v2.0.31：修正 S 参数参考阻抗、波定义和端口方向的处理，改善分割结果及文件加载、Reset、错误提示和曲线显示。跨工具一致性仅适用于已验证输入、原频点和指定设置。450 Ω 剖面、PLTS 实际共同 DC/STEP/Custom/窗口与门控、AFR 夹具提取，以及错误模态中含 Reset 前其它槽位旧请求的精确桌面时序尚未全部验收；这些现有项已获用户发布豁免，不代表数值通过。GPU 仍为可选安装。
 
 ## v2.0.30 更新
 
