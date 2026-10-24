@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_31.zip](http://106.14.76.130/REA/2.0.31/REA_dist_v2_0_31.zip)
+### ⬇️ [REA_dist_v2_0_32.zip](http://106.14.76.130/REA/2.0.32/REA_dist_v2_0_32.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.31 | 246.6 MB | 2026-10-23 | `9dd37149f98ee811758aef82e3cc248831dc13dfbc382666e9558505720a5863` |
+| v2.0.32 | 246.9 MB | 2026-10-24 | `29607aed201ef50a7ebe35ab7dee0a989314f46c214ca8b91fabbda74e73ff68` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.31](http://106.14.76.130/REA-Skill/2.0.31/REA-Skill_dist_v2_0_31.zip) · 114.6 kB · SHA-256: `d7e36212ccb9736cd25e598cbbe71134462e2bcf40d897af4440d2795e4cb76b`
+[Download REA skill v2.0.32](http://106.14.76.130/REA-Skill/2.0.32/REA-Skill_dist_v2_0_32.zip) · 116.0 kB · SHA-256: `cd3d90120ddf556228b56f3ca00b0f5ff3b2913cda96662fe63f574cee48de9f`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.31 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.32 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,16 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.32 changes
+
+- Add an explicit PLTS finite-interval response method and low-pass interval gating, with separate observation and gate bounds and validation of the input grid, DC and compatible settings.
+- Correct the division and scaling order in finite-interval impedance conversion, removing a one-ULP difference in the original reflection cases.
+- Correct the TDR/TDT Custom window coefficient conversion while retaining the measured frequency band and pulse amplitude definition.
+- Correct the low-pass Kaiser window center and measured support so the original beta=13 impulse cases meet their original tolerance.
+- Synchronize bilingual guidance and REA-Skill with the added validation scope and retained limitations; GPU remains optional.
+
+Version 2.0.32 corrects Custom/Kaiser impulse calculations and adds an explicit PLTS finite-interval method. All 10010 original STEP samples across ten cases, 4004 complex S21 values across four gate cases and 4004 impedance values across four reflection cases agree bit for bit in source and packaged code, retaining every original node and acceptance condition. Real TCP exports from the visible interface of the released EXE also matched the four reflection curves, four gated time responses and eight Custom/Kaiser settings. These results cover only the recorded inputs, windows, DC, intervals and ports. Earlier evidence for actual manual DC, shared-fixture AFR deembedding and the specified source Reset desktop case remains valid; the exact desktop timing of that Reset case was not repeated on the released EXE, whose related code is unchanged since v2.0.31, and the existing user waiver continues to apply. The original failed 450-ohm profile and its user-authorized release waiver remain, without being counted as a pass. GPU installation is optional.
 
 ## v2.0.31 changes
 

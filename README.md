@@ -10,11 +10,11 @@
 
 **本仓库不含软件本体。** 这是商业软件，源码不公开，仓库只作说明与下载入口。
 
-### ⬇️ [REA_dist_v2_0_31.zip](http://106.14.76.130/REA/2.0.31/REA_dist_v2_0_31.zip)
+### ⬇️ [REA_dist_v2_0_32.zip](http://106.14.76.130/REA/2.0.32/REA_dist_v2_0_32.zip)
 
 | 版本 | 大小 | 发布日期 | SHA-256 |
 |---|---|---|---|
-| v2.0.31 | 246.6 MB | 2026-10-23 | `9dd37149f98ee811758aef82e3cc248831dc13dfbc382666e9558505720a5863` |
+| v2.0.32 | 246.9 MB | 2026-10-24 | `29607aed201ef50a7ebe35ab7dee0a989314f46c214ca8b91fabbda74e73ff68` |
 
 下载站首页（全部工具）：http://106.14.76.130
 
@@ -22,9 +22,9 @@
 
 ### 配套 AI skill（Claude Code / Codex）
 
-[下载 REA skill v2.0.31](http://106.14.76.130/REA-Skill/2.0.31/REA-Skill_dist_v2_0_31.zip) · 114.6 kB · SHA-256：`d7e36212ccb9736cd25e598cbbe71134462e2bcf40d897af4440d2795e4cb76b`
+[下载 REA skill v2.0.32](http://106.14.76.130/REA-Skill/2.0.32/REA-Skill_dist_v2_0_32.zip) · 116.0 kB · SHA-256：`cd3d90120ddf556228b56f3ca00b0f5ff3b2913cda96662fe63f574cee48de9f`
 
-解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.31 同步，安装它不改变 REA 的商业授权要求。
+解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.32 同步，安装它不改变 REA 的商业授权要求。
 
 ## 🔑 授权
 
@@ -51,6 +51,16 @@
 | 远程控制 | SCPI over TCP/IP |
 | 输出 | 眼高 / 眼宽 / 余量 |
 
+
+## v2.0.32 更新
+
+- 增加显式 PLTS 有限观察区间计算及低通区间门控，分别设置观察区间和门边界，并校验输入频点、DC 和兼容设置。
+- 修正有限区间阻抗换算的除法与缩放次序，消除原反射案例的一位浮点末位差异。
+- 修正 TDR/TDT 的 Custom 窗系数换算，保留实测频带和脉冲幅度定义。
+- 修正低通 Kaiser 窗的中心和有效频带处理，使原 beta=13 脉冲案例满足原容差。
+- 同步中英文说明及配套 REA-Skill，明确新增验证范围和保留限制；GPU 保持可选。
+
+v2.0.32 修正 Custom/Kaiser 脉冲计算，并增加显式的 PLTS 有限观察区间方式。原十组 STEP 的 10010 点、四组门控的 4004 个复数 S21 值和四组反射的 4004 个阻抗值，已在源码和发行包代码中逐点、逐位一致，保留全部原节点和原验收条件。发行版 EXE 的可见界面另经真实 TCP 导出，核对了四组反射曲线、四组门控后的时域响应和八种 Custom/Kaiser 设置。结论仅适用于记录中的输入、窗、DC、区间和端口。此前实际手动 DC、同夹具 AFR 去嵌和指定 Reset 源码桌面场景的证据继续有效；该 Reset 场景的精确桌面时序未在发行版 EXE 上重复，相关代码自 v2.0.31 起未改动，沿用现有用户豁免。450 Ω 剖面的原失败及用户发布豁免继续保留，不计为通过。GPU 为可选安装。
 
 ## v2.0.31 更新
 
