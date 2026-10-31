@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_32.zip](http://106.14.76.130/REA/2.0.32/REA_dist_v2_0_32.zip)
+### ⬇️ [REA_dist_v2_0_33.zip](http://106.14.76.130/REA/2.0.33/REA_dist_v2_0_33.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.32 | 246.9 MB | 2026-10-24 | `29607aed201ef50a7ebe35ab7dee0a989314f46c214ca8b91fabbda74e73ff68` |
+| v2.0.33 | 247.0 MB | 2026-10-31 | `be39759127684b54740aab33bc21878b42c41661b0f6639b3c943f57b74fb039` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.32](http://106.14.76.130/REA-Skill/2.0.32/REA-Skill_dist_v2_0_32.zip) · 116.0 kB · SHA-256: `cd3d90120ddf556228b56f3ca00b0f5ff3b2913cda96662fe63f574cee48de9f`
+[Download REA skill v2.0.33](http://106.14.76.130/REA-Skill/2.0.33/REA-Skill_dist_v2_0_33.zip) · 116.3 kB · SHA-256: `89bd7fad498f6d976a3e4e9b715b22f7bfbff1e2db52ad3e9ee3ce2fa67da39f`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.32 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.33 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,15 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.33 changes
+
+- Correct history across short streaming chunks and eye-width, centering and initialization handling for ideal edges and IBIS-AMI FIR models.
+- Preserve full COM-import precision while honoring manual edits; correct As millivolt units and noise handling for folded eyes.
+- Correct SCPI startup failures, completion and timeout status; prevent Normal/Expert task conflicts and require explicit calculation after loading a configuration.
+- Avoid silently returning incomplete optimizer searches after memory exhaustion; improve dialog cleanup, translated plots, UTF-8 input and shared feedback history.
+
+Version 2.0.33 updates eye calculations, COM import, IBIS-AMI, SCPI and interface stability. Validation covers only the inputs, settings and execution paths in the release record, not all models or platforms. The existing failed 450-ohm profile and its release waiver, and the previously unrepeated exact Reset desktop sequence, remain recorded without being counted as passes. New issues require their own validation. GPU acceleration is optional.
 
 ## v2.0.32 changes
 
@@ -155,3 +164,4 @@ Version 2.0.31 corrects S-parameter reference-impedance, wave-definition and por
 ## 📮 Contact
 
 WeChat official account: **高速通信杂谈**
+
