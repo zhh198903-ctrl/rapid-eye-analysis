@@ -10,11 +10,11 @@
 
 **本仓库不含软件本体。** 这是商业软件，源码不公开，仓库只作说明与下载入口。
 
-### ⬇️ [REA_dist_v2_0_36.zip](http://106.14.76.130/REA/2.0.36/REA_dist_v2_0_36.zip)
+### ⬇️ [REA_dist_v2_0_37.zip](http://106.14.76.130/REA/2.0.37/REA_dist_v2_0_37.zip)
 
 | 版本 | 大小 | 发布日期 | SHA-256 |
 |---|---|---|---|
-| v2.0.36 | 247.0 MB | 2026-11-09 | `3ecec5ef50cfd05c794c05155208c75817d29791ece7a3e3924adbf3f33fcd52` |
+| v2.0.37 | 247.1 MB | 2026-11-09 | `974a96e5dd9698cc66906ce3d4fb5850f6dfcfeb9299092a0784a4ad3e7ea33c` |
 
 下载站首页（全部工具）：http://106.14.76.130
 
@@ -22,9 +22,9 @@
 
 ### 配套 AI skill（Claude Code / Codex）
 
-[下载 REA skill v2.0.36](http://106.14.76.130/REA-Skill/2.0.36/REA-Skill_dist_v2_0_36.zip) · 116.6 kB · SHA-256：`90da8e279bf418f61e54c09ad9cfc3e2339244e38846bab6692e9520daeb4148`
+[下载 REA skill v2.0.37](http://106.14.76.130/REA-Skill/2.0.37/REA-Skill_dist_v2_0_37.zip) · 116.8 kB · SHA-256：`ecb6e68053ecc35424293fb8b246c89f63fccf8fbbdfa91fbf396e27615f8f7f`
 
-解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.36 同步，安装它不改变 REA 的商业授权要求。
+解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.37 同步，安装它不改变 REA 的商业授权要求。
 
 ## 🔑 授权
 
@@ -51,6 +51,15 @@
 | 远程控制 | SCPI over TCP/IP |
 | 输出 | 眼高 / 眼宽 / 余量 |
 
+
+## v2.0.37 更新
+
+- 在 COM 导入窗口直接输入 CSV 或 Excel 路径后，导入会使用输入框中的文件。切换 CSV 会替换自动导入的串扰通道，并保留手动添加的通道。
+- 流式眼图使用按时间顺序折叠的前 4096 个窗口标定电压分箱，并加快 CPU 直方图计数。
+- 修正 CUDA 眼宽评分中恰好落在采样列上的交叉点归属，使该边界与 CPU 判决一致。
+- 后台计算完成或报错后即释放该请求持有的输入和结果，减少等待下一次计算时的内存占用。
+
+本版适用于 Windows。验证限于发布记录中的输入、设置和运行路径。历史 450 Ω 剖面失败及未重复的精确 Reset 桌面时序沿用原发布豁免，不计作通过。
 
 ## v2.0.36 更新
 

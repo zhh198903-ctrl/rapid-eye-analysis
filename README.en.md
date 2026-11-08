@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_36.zip](http://106.14.76.130/REA/2.0.36/REA_dist_v2_0_36.zip)
+### ⬇️ [REA_dist_v2_0_37.zip](http://106.14.76.130/REA/2.0.37/REA_dist_v2_0_37.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.36 | 247.0 MB | 2026-11-09 | `3ecec5ef50cfd05c794c05155208c75817d29791ece7a3e3924adbf3f33fcd52` |
+| v2.0.37 | 247.1 MB | 2026-11-09 | `974a96e5dd9698cc66906ce3d4fb5850f6dfcfeb9299092a0784a4ad3e7ea33c` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.36](http://106.14.76.130/REA-Skill/2.0.36/REA-Skill_dist_v2_0_36.zip) · 116.6 kB · SHA-256: `90da8e279bf418f61e54c09ad9cfc3e2339244e38846bab6692e9520daeb4148`
+[Download REA skill v2.0.37](http://106.14.76.130/REA-Skill/2.0.37/REA-Skill_dist_v2_0_37.zip) · 116.8 kB · SHA-256: `ecb6e68053ecc35424293fb8b246c89f63fccf8fbbdfa91fbf396e27615f8f7f`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.36 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.37 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,15 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.37 changes
+
+- COM import uses CSV and Excel paths typed into the dialog. Switching CSV files replaces automatically imported aggressors and preserves manually added channels.
+- Streaming eye diagrams calibrate voltage bins from the first 4,096 folded windows in time order. The CPU histogram counts uniform voltage bins more efficiently.
+- CUDA eye-width scoring now assigns crossings exactly on the sampling column consistently with the CPU decision search.
+- The compute service releases request inputs and results after success or failure, reducing memory held while waiting for the next calculation.
+
+Windows release. Verification covers the inputs, settings and paths in the release record. The historical failed 450-ohm profile and unrepeated exact Reset desktop sequence retain their previous waivers and are not counted as passes.
 
 ## v2.0.36 changes
 
