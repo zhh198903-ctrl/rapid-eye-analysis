@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_33.zip](http://106.14.76.130/REA/2.0.33/REA_dist_v2_0_33.zip)
+### ⬇️ [REA_dist_v2_0_34.zip](http://106.14.76.130/REA/2.0.34/REA_dist_v2_0_34.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.33 | 247.0 MB | 2026-10-31 | `be39759127684b54740aab33bc21878b42c41661b0f6639b3c943f57b74fb039` |
+| v2.0.34 | 247.0 MB | 2026-11-08 | `392211834f728bff6c2c56e030e21ae0607b319ed8b70ebb0aafb68f05dabb15` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.33](http://106.14.76.130/REA-Skill/2.0.33/REA-Skill_dist_v2_0_33.zip) · 116.3 kB · SHA-256: `89bd7fad498f6d976a3e4e9b715b22f7bfbff1e2db52ad3e9ee3ce2fa67da39f`
+[Download REA skill v2.0.34](http://106.14.76.130/REA-Skill/2.0.34/REA-Skill_dist_v2_0_34.zip) · 116.4 kB · SHA-256: `0344b8c9a34df551a64e0bc4a7d47bf442028cd6d537fedd4559597d551cb472`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.33 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.34 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,15 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.34 changes
+
+- Clearing or replacing eye inputs clears stale measurements, timing and optimization summaries. Restoring a configuration synchronizes the active file list with remote queries.
+- Adding a two-port file after loading a four-port configuration honors the saved direction. Changing the direction of a single two-port input preserves its reported path.
+- Report SCPI result-publication errors, retain completed FEC and MLSE captures and release resources owned by each CTLE or FFE optimization job.
+- Keep cascade and de-embedding checkboxes in sync with plotted traces across language changes. Correct automatic IBIS model selection, node editor teardown and keyboard navigation in settings.
+
+Windows release. Verification covers the inputs, settings and paths in the release record. The historical failed 450-ohm profile and unrepeated exact Reset desktop sequence retain their previous waivers and are not counted as passes.
 
 ## v2.0.33 changes
 
