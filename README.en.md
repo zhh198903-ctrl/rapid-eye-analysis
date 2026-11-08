@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_34.zip](http://106.14.76.130/REA/2.0.34/REA_dist_v2_0_34.zip)
+### ⬇️ [REA_dist_v2_0_35.zip](http://106.14.76.130/REA/2.0.35/REA_dist_v2_0_35.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.34 | 247.0 MB | 2026-11-08 | `392211834f728bff6c2c56e030e21ae0607b319ed8b70ebb0aafb68f05dabb15` |
+| v2.0.35 | 247.0 MB | 2026-11-09 | `c586674ce5b073fd0361df173cfcdb5b6f0f21b614baeddebeca951232fb5542` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.34](http://106.14.76.130/REA-Skill/2.0.34/REA-Skill_dist_v2_0_34.zip) · 116.4 kB · SHA-256: `0344b8c9a34df551a64e0bc4a7d47bf442028cd6d537fedd4559597d551cb472`
+[Download REA skill v2.0.35](http://106.14.76.130/REA-Skill/2.0.35/REA-Skill_dist_v2_0_35.zip) · 116.5 kB · SHA-256: `08da4a2faa18b9484cd9d1e5f26fbb5e4212c4e82d56d9f60c1fa6339771bc38`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.34 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.35 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,13 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.35 changes
+
+- Reloading a Touchstone measurement picks up an atomically replaced file even when its size and modification time are preserved. A read already in progress can no longer repopulate a cleared cache.
+- CPU streaming eye calculations retain only the waveform samples needed by the next block and release completed inverse FFT arrays before the next batch. This reduces the amount of data held in memory.
+
+Windows release. Verification covers the inputs, settings and paths in the release record. The historical failed 450-ohm profile and unrepeated exact Reset desktop sequence retain their previous waivers and are not counted as passes.
 
 ## v2.0.34 changes
 

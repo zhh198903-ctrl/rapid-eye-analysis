@@ -10,11 +10,11 @@
 
 **本仓库不含软件本体。** 这是商业软件，源码不公开，仓库只作说明与下载入口。
 
-### ⬇️ [REA_dist_v2_0_34.zip](http://106.14.76.130/REA/2.0.34/REA_dist_v2_0_34.zip)
+### ⬇️ [REA_dist_v2_0_35.zip](http://106.14.76.130/REA/2.0.35/REA_dist_v2_0_35.zip)
 
 | 版本 | 大小 | 发布日期 | SHA-256 |
 |---|---|---|---|
-| v2.0.34 | 247.0 MB | 2026-11-08 | `392211834f728bff6c2c56e030e21ae0607b319ed8b70ebb0aafb68f05dabb15` |
+| v2.0.35 | 247.0 MB | 2026-11-09 | `c586674ce5b073fd0361df173cfcdb5b6f0f21b614baeddebeca951232fb5542` |
 
 下载站首页（全部工具）：http://106.14.76.130
 
@@ -22,9 +22,9 @@
 
 ### 配套 AI skill（Claude Code / Codex）
 
-[下载 REA skill v2.0.34](http://106.14.76.130/REA-Skill/2.0.34/REA-Skill_dist_v2_0_34.zip) · 116.4 kB · SHA-256：`0344b8c9a34df551a64e0bc4a7d47bf442028cd6d537fedd4559597d551cb472`
+[下载 REA skill v2.0.35](http://106.14.76.130/REA-Skill/2.0.35/REA-Skill_dist_v2_0_35.zip) · 116.5 kB · SHA-256：`08da4a2faa18b9484cd9d1e5f26fbb5e4212c4e82d56d9f60c1fa6339771bc38`
 
-解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.34 同步，安装它不改变 REA 的商业授权要求。
+解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.35 同步，安装它不改变 REA 的商业授权要求。
 
 ## 🔑 授权
 
@@ -51,6 +51,13 @@
 | 远程控制 | SCPI over TCP/IP |
 | 输出 | 眼高 / 眼宽 / 余量 |
 
+
+## v2.0.35 更新
+
+- 重新导入同名 Touchstone 测量文件时，即使替换文件保留原大小和修改时间，也会读取新数据。清除缓存后，正在读取的旧数据不会重新写入缓存。
+- CPU 分块计算眼图时，只保留下一块需要的波形样本，并在下一批变换前释放已处理的逆 FFT 数组，减少同时占用的内存。
+
+本版适用于 Windows。验证限于发布记录中的输入、设置和运行路径。历史 450 Ω 剖面失败及未重复的精确 Reset 桌面时序沿用原发布豁免，不计作通过。
 
 ## v2.0.34 更新
 
