@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_35.zip](http://106.14.76.130/REA/2.0.35/REA_dist_v2_0_35.zip)
+### ⬇️ [REA_dist_v2_0_36.zip](http://106.14.76.130/REA/2.0.36/REA_dist_v2_0_36.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.35 | 247.0 MB | 2026-11-09 | `c586674ce5b073fd0361df173cfcdb5b6f0f21b614baeddebeca951232fb5542` |
+| v2.0.36 | 247.0 MB | 2026-11-09 | `3ecec5ef50cfd05c794c05155208c75817d29791ece7a3e3924adbf3f33fcd52` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.35](http://106.14.76.130/REA-Skill/2.0.35/REA-Skill_dist_v2_0_35.zip) · 116.5 kB · SHA-256: `08da4a2faa18b9484cd9d1e5f26fbb5e4212c4e82d56d9f60c1fa6339771bc38`
+[Download REA skill v2.0.36](http://106.14.76.130/REA-Skill/2.0.36/REA-Skill_dist_v2_0_36.zip) · 116.6 kB · SHA-256: `90da8e279bf418f61e54c09ad9cfc3e2339244e38846bab6692e9520daeb4148`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.35 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.36 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,13 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.36 changes
+
+- On Windows, a single resume continues a calculation after repeated pauses. Automatic FFE main-tap scans can use multiple CPU workers. Pause, cancellation and exit also apply to the scan workers.
+- Streaming eye calculations preserve completed histogram counts, voltage bins and traces when a GPU batch is retried or falls back to the CPU after a memory allocation failure. This also preserves counts in intermediate snapshots.
+
+Windows release. Verification covers the inputs, settings and paths in the release record. The historical failed 450-ohm profile and unrepeated exact Reset desktop sequence retain their previous waivers and are not counted as passes.
 
 ## v2.0.35 changes
 
