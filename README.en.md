@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_39.zip](http://106.14.76.130/REA/2.0.39/REA_dist_v2_0_39.zip)
+### ⬇️ [REA_dist_v2_0_40.zip](http://106.14.76.130/REA/2.0.40/REA_dist_v2_0_40.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.39 | 247.1 MB | 2026-11-09 | `64bcbb31dc0f3988ade9aae33f0712dca02d5e1b5ae694f83c4c26fc9c268bcc` |
+| v2.0.40 | 247.1 MB | 2026-11-09 | `1fa4633a460b4a08de08f737986c814d68a02809ef04f611e385bf83124844b4` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.39](http://106.14.76.130/REA-Skill/2.0.39/REA-Skill_dist_v2_0_39.zip) · 116.9 kB · SHA-256: `4c0b4834cf9d1efdeec8b26b6b430bc873c73681b16fdaa48f667e9d204de864`
+[Download REA skill v2.0.40](http://106.14.76.130/REA-Skill/2.0.40/REA-Skill_dist_v2_0_40.zip) · 117.0 kB · SHA-256: `1de563cba16aa59e942806b661a5aa2121d83d036f5311a1ea9d8696efc767d8`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.39 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.40 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,12 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.40 changes
+
+- The splitter checks every segment destination before a batch export. If a directory occupies an output filename, REA reports that path and preserves the existing files in the batch. The GUI and SCPI use the same check.
+
+Windows release. Verification covers the inputs, settings and paths in the release record. The historical failed 450-ohm profile and unrepeated exact Reset desktop sequence retain their previous waivers and are not counted as passes.
 
 ## v2.0.39 changes
 
