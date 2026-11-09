@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_38.zip](http://106.14.76.130/REA/2.0.38/REA_dist_v2_0_38.zip)
+### ⬇️ [REA_dist_v2_0_39.zip](http://106.14.76.130/REA/2.0.39/REA_dist_v2_0_39.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.38 | 247.1 MB | 2026-11-09 | `3414dcc069e521e6c341c514773e9e44e280e87d7587e0103be2291637933f8a` |
+| v2.0.39 | 247.1 MB | 2026-11-09 | `64bcbb31dc0f3988ade9aae33f0712dca02d5e1b5ae694f83c4c26fc9c268bcc` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.38](http://106.14.76.130/REA-Skill/2.0.38/REA-Skill_dist_v2_0_38.zip) · 116.9 kB · SHA-256: `a0bacc926a40b163b721d7af4aa16b56fbb00a65c054b225a0ef3edba518a837`
+[Download REA skill v2.0.39](http://106.14.76.130/REA-Skill/2.0.39/REA-Skill_dist_v2_0_39.zip) · 116.9 kB · SHA-256: `4c0b4834cf9d1efdeec8b26b6b430bc873c73681b16fdaa48f667e9d204de864`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.38 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.39 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,12 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.39 changes
+
+- Normal mode saves the Force Levels setting and its full-precision values with the configuration. Loading the file restores these settings for the next eye calculation. Older files without these fields select automatic levels.
+
+Windows release. Verification covers the inputs, settings and paths in the release record. The historical failed 450-ohm profile and unrepeated exact Reset desktop sequence retain their previous waivers and are not counted as passes.
 
 ## v2.0.38 changes
 
