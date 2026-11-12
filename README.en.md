@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_40.zip](http://106.14.76.130/REA/2.0.40/REA_dist_v2_0_40.zip)
+### ⬇️ [REA_dist_v2_0_41.zip](http://106.14.76.130/REA/2.0.41/REA_dist_v2_0_41.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.40 | 247.1 MB | 2026-11-09 | `1fa4633a460b4a08de08f737986c814d68a02809ef04f611e385bf83124844b4` |
+| v2.0.41 | 250.8 MB | 2026-11-12 | `05a9348ad1e5739a1a7e6b32c3d0ba6af3ba660e0798c7f3a40234272f6067a7` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.40](http://106.14.76.130/REA-Skill/2.0.40/REA-Skill_dist_v2_0_40.zip) · 117.0 kB · SHA-256: `1de563cba16aa59e942806b661a5aa2121d83d036f5311a1ea9d8696efc767d8`
+[Download REA skill v2.0.41](http://106.14.76.130/REA-Skill/2.0.41/REA-Skill_dist_v2_0_41.zip) · 117.4 kB · SHA-256: `f0895531796ae3069d9584cb70387d868aba3d584360b85abc15e30962551c59`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.40 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.41 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,16 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.41 changes
+
+- The optical TDECQ probe supports single-tone, multitone and band-limited Gaussian intensity noise, with amplitude, frequency, phase and seed settings and measured injection readback.
+- Corrected FFE+DFE equalization that could degrade under some high-frequency disturbances. Receiver constraints and measurement conventions are consistent across both modes.
+- Remaining time is shown only after enough progressing samples are available. Stalled or changing stages show elapsed time instead of misleading long estimates.
+- Corrected the formula shown in optical TDECQ reports and preserved the selected plot background in exported images.
+- Improved Windows startup system queries to avoid stalls caused by an unresponsive external command environment, while preserving existing license identity.
+
+Windows release. Verification covers the intensity-noise, joint-equalization and related display paths; it does not certify every channel, pattern or noise condition. Existing release waivers remain unchanged.
 
 ## v2.0.40 changes
 
@@ -214,4 +224,5 @@ Version 2.0.31 corrects S-parameter reference-impedance, wave-definition and por
 ## 📮 Contact
 
 WeChat official account: **高速通信杂谈**
+
 
