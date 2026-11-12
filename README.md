@@ -10,11 +10,11 @@
 
 **本仓库不含软件本体。** 这是商业软件，源码不公开，仓库只作说明与下载入口。
 
-### ⬇️ [REA_dist_v2_0_41.zip](http://106.14.76.130/REA/2.0.41/REA_dist_v2_0_41.zip)
+### ⬇️ [REA_dist_v2_0_42.zip](http://106.14.76.130/REA/2.0.42/REA_dist_v2_0_42.zip)
 
 | 版本 | 大小 | 发布日期 | SHA-256 |
 |---|---|---|---|
-| v2.0.41 | 250.8 MB | 2026-11-12 | `05a9348ad1e5739a1a7e6b32c3d0ba6af3ba660e0798c7f3a40234272f6067a7` |
+| v2.0.42 | 250.8 MB | 2026-11-13 | `af7c8186151a156a5f73802dfc19a8b0a8aee11bb62469ea3f1b936ad2a2d6c8` |
 
 下载站首页（全部工具）：http://106.14.76.130
 
@@ -22,9 +22,9 @@
 
 ### 配套 AI skill（Claude Code / Codex）
 
-[下载 REA skill v2.0.41](http://106.14.76.130/REA-Skill/2.0.41/REA-Skill_dist_v2_0_41.zip) · 117.4 kB · SHA-256：`f0895531796ae3069d9584cb70387d868aba3d584360b85abc15e30962551c59`
+[下载 REA skill v2.0.42](http://106.14.76.130/REA-Skill/2.0.42/REA-Skill_dist_v2_0_42.zip) · 117.5 kB · SHA-256：`93478663489772a94ff21fd9a40203c48c2df992a6aa1ccb4c3730558fe6aefd`
 
-解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.41 同步，安装它不改变 REA 的商业授权要求。
+解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.42 同步，安装它不改变 REA 的商业授权要求。
 
 ## 🔑 授权
 
@@ -51,6 +51,12 @@
 | 远程控制 | SCPI over TCP/IP |
 | 输出 | 眼高 / 眼宽 / 余量 |
 
+
+## v2.0.42 更新
+
+- 修复连续进行光学 TDECQ 均衡时临时内存未及时释放、可能导致计算失败的问题；保留原有测量公式、采样和均衡结果。
+
+本版适用于 Windows。验证覆盖连续 TDECQ 计算、正常及异常结束时的内存释放，以及四类光强噪声的完整波形结果一致性；不代表所有链路和噪声条件。历史发布豁免保持不变。
 
 ## v2.0.41 更新
 
@@ -224,5 +230,6 @@ v2.0.31：修正 S 参数参考阻抗、波定义和端口方向的处理，改�
 ## 📮 联系
 
 微信公众号：**高速通信杂谈**
+
 
 

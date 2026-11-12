@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_41.zip](http://106.14.76.130/REA/2.0.41/REA_dist_v2_0_41.zip)
+### ⬇️ [REA_dist_v2_0_42.zip](http://106.14.76.130/REA/2.0.42/REA_dist_v2_0_42.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.41 | 250.8 MB | 2026-11-12 | `05a9348ad1e5739a1a7e6b32c3d0ba6af3ba660e0798c7f3a40234272f6067a7` |
+| v2.0.42 | 250.8 MB | 2026-11-13 | `af7c8186151a156a5f73802dfc19a8b0a8aee11bb62469ea3f1b936ad2a2d6c8` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.41](http://106.14.76.130/REA-Skill/2.0.41/REA-Skill_dist_v2_0_41.zip) · 117.4 kB · SHA-256: `f0895531796ae3069d9584cb70387d868aba3d584360b85abc15e30962551c59`
+[Download REA skill v2.0.42](http://106.14.76.130/REA-Skill/2.0.42/REA-Skill_dist_v2_0_42.zip) · 117.5 kB · SHA-256: `93478663489772a94ff21fd9a40203c48c2df992a6aa1ccb4c3730558fe6aefd`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.41 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.42 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,12 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.42 changes
+
+- Fixed delayed release of temporary memory during repeated optical TDECQ equalization that could cause calculation failures. Measurement formulas, sampling and equalization results are preserved.
+
+Windows release. Validation covers repeated TDECQ evaluation, buffer release on success and error, and full-waveform parity for four intensity-noise cases; it does not certify every channel or noise condition. Existing release waivers remain unchanged.
 
 ## v2.0.41 changes
 
@@ -224,5 +230,6 @@ Version 2.0.31 corrects S-parameter reference-impedance, wave-definition and por
 ## 📮 Contact
 
 WeChat official account: **高速通信杂谈**
+
 
 
