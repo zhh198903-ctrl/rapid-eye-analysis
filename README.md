@@ -10,11 +10,11 @@
 
 **本仓库不含软件本体。** 这是商业软件，源码不公开，仓库只作说明与下载入口。
 
-### ⬇️ [REA_dist_v2_0_42.zip](http://106.14.76.130/REA/2.0.42/REA_dist_v2_0_42.zip)
+### ⬇️ [REA_dist_v2_0_43.zip](http://106.14.76.130/REA/2.0.43/REA_dist_v2_0_43.zip)
 
 | 版本 | 大小 | 发布日期 | SHA-256 |
 |---|---|---|---|
-| v2.0.42 | 250.8 MB | 2026-11-13 | `af7c8186151a156a5f73802dfc19a8b0a8aee11bb62469ea3f1b936ad2a2d6c8` |
+| v2.0.43 | 250.8 MB | 2026-11-14 | `6e5cf6f0d4100189074422d8f4a0ff9fe056517f3e045121d75faefe0b681f2b` |
 
 下载站首页（全部工具）：http://106.14.76.130
 
@@ -22,9 +22,9 @@
 
 ### 配套 AI skill（Claude Code / Codex）
 
-[下载 REA skill v2.0.42](http://106.14.76.130/REA-Skill/2.0.42/REA-Skill_dist_v2_0_42.zip) · 117.5 kB · SHA-256：`93478663489772a94ff21fd9a40203c48c2df992a6aa1ccb4c3730558fe6aefd`
+[下载 REA skill v2.0.43](http://106.14.76.130/REA-Skill/2.0.43/REA-Skill_dist_v2_0_43.zip) · 117.5 kB · SHA-256：`eb99d351357545b2aea545a9f11a42e8afe5d6d37ae1232b7262c3f44bf6f07a`
 
-解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.42 同步，安装它不改变 REA 的商业授权要求。
+解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.43 同步，安装它不改变 REA 的商业授权要求。
 
 ## 🔑 授权
 
@@ -51,6 +51,13 @@
 | 远程控制 | SCPI over TCP/IP |
 | 输出 | 眼高 / 眼宽 / 余量 |
 
+
+## v2.0.43 更新
+
+- 修复 Expert 画布的适应视图未缩放整条链路的问题；自动布局后保持已有测量结果有效。
+- 修正探针详情的 Ceq 单位和 FFE 主抽头说明：均衡前显示 Ceq 0 dB、FFE main=1，主抽头位置另行列出。
+
+本版适用于 Windows。验证覆盖长链路视图、自动布局、探针中英文说明，以及 CPU/GPU 的真实 GUI 和 TCP 测量复现；数值测量模块与 v2.0.42 相同。历史发布豁免保持不变。
 
 ## v2.0.42 更新
 

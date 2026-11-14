@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_42.zip](http://106.14.76.130/REA/2.0.42/REA_dist_v2_0_42.zip)
+### ⬇️ [REA_dist_v2_0_43.zip](http://106.14.76.130/REA/2.0.43/REA_dist_v2_0_43.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.42 | 250.8 MB | 2026-11-13 | `af7c8186151a156a5f73802dfc19a8b0a8aee11bb62469ea3f1b936ad2a2d6c8` |
+| v2.0.43 | 250.8 MB | 2026-11-14 | `6e5cf6f0d4100189074422d8f4a0ff9fe056517f3e045121d75faefe0b681f2b` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.42](http://106.14.76.130/REA-Skill/2.0.42/REA-Skill_dist_v2_0_42.zip) · 117.5 kB · SHA-256: `93478663489772a94ff21fd9a40203c48c2df992a6aa1ccb4c3730558fe6aefd`
+[Download REA skill v2.0.43](http://106.14.76.130/REA-Skill/2.0.43/REA-Skill_dist_v2_0_43.zip) · 117.5 kB · SHA-256: `eb99d351357545b2aea545a9f11a42e8afe5d6d37ae1232b7262c3f44bf6f07a`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.42 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.43 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,13 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.43 changes
+
+- Fixed Expert Fit View so the complete chain is scaled into the canvas. Auto Layout now preserves valid measurement results.
+- Corrected Ceq units and FFE main-tap descriptions in probe details: the unequalized eye shows Ceq 0 dB and FFE main=1, with the tap position listed separately.
+
+Windows release. Validation covers long-chain views, Auto Layout, bilingual probe descriptions, and real GUI/TCP measurement replay on CPU and GPU. Numerical measurement modules are identical to v2.0.42. Existing release waivers remain unchanged.
 
 ## v2.0.42 changes
 
