@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_43.zip](http://106.14.76.130/REA/2.0.43/REA_dist_v2_0_43.zip)
+### ⬇️ [REA_dist_v2_0_44.zip](http://106.14.76.130/REA/2.0.44/REA_dist_v2_0_44.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.43 | 250.8 MB | 2026-11-14 | `6e5cf6f0d4100189074422d8f4a0ff9fe056517f3e045121d75faefe0b681f2b` |
+| v2.0.44 | 251.1 MB | 2026-11-15 | `0389c9c8642b9b67b6de736262ce7982a9282065f2ed69cc3c938cd07f54e828` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.43](http://106.14.76.130/REA-Skill/2.0.43/REA-Skill_dist_v2_0_43.zip) · 117.5 kB · SHA-256: `eb99d351357545b2aea545a9f11a42e8afe5d6d37ae1232b7262c3f44bf6f07a`
+[Download REA skill v2.0.44](http://106.14.76.130/REA-Skill/2.0.44/REA-Skill_dist_v2_0_44.zip) · 117.6 kB · SHA-256: `0fe0fabce45415ca8335b2b36df02110b1cbfa8d7d0b23cfb1cc24b4a91398ba`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.43 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.44 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,16 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.44 changes
+
+- FFE, DFE and CTLE optimization scores candidates with their configured receiver noise; GPU scoring includes Gaussian crosstalk.
+- Improve consistent completion and export records; failed or cancelled exports preserve existing files and avoid publishing partial results.
+- Fix sparse DFE configuration restoration, stale channels after failed input loading and canvas recovery after failed image export.
+- Improve ambiguous split-result reporting, memory-menu and drag-state synchronization, and full-precision noise queries.
+- Retain the previous optical-noise, TDECQ memory cleanup, canvas-fit and probe-description fixes. Existing licenses remain valid.
+
+Windows release. Verification includes 323 focused source checks, 42 actual compiled-module checks, and visible release-EXE CPU/GPU optimization, sparse DFE configuration round trips, waveform export and optical replay. Four manuals are updated. Results cover the recorded inputs and settings and do not certify the Mac port. The historical failed 450-ohm profile and unrepeated exact Reset desktop sequence retain their existing waivers and are not counted as passes. GPU acceleration remains optional.
 
 ## v2.0.43 changes
 
