@@ -10,11 +10,11 @@
 
 **本仓库不含软件本体。** 这是商业软件，源码不公开，仓库只作说明与下载入口。
 
-### ⬇️ [REA_dist_v2_0_43.zip](http://106.14.76.130/REA/2.0.43/REA_dist_v2_0_43.zip)
+### ⬇️ [REA_dist_v2_0_44.zip](http://106.14.76.130/REA/2.0.44/REA_dist_v2_0_44.zip)
 
 | 版本 | 大小 | 发布日期 | SHA-256 |
 |---|---|---|---|
-| v2.0.43 | 250.8 MB | 2026-11-14 | `6e5cf6f0d4100189074422d8f4a0ff9fe056517f3e045121d75faefe0b681f2b` |
+| v2.0.44 | 251.1 MB | 2026-11-15 | `0389c9c8642b9b67b6de736262ce7982a9282065f2ed69cc3c938cd07f54e828` |
 
 下载站首页（全部工具）：http://106.14.76.130
 
@@ -22,9 +22,9 @@
 
 ### 配套 AI skill（Claude Code / Codex）
 
-[下载 REA skill v2.0.43](http://106.14.76.130/REA-Skill/2.0.43/REA-Skill_dist_v2_0_43.zip) · 117.5 kB · SHA-256：`eb99d351357545b2aea545a9f11a42e8afe5d6d37ae1232b7262c3f44bf6f07a`
+[下载 REA skill v2.0.44](http://106.14.76.130/REA-Skill/2.0.44/REA-Skill_dist_v2_0_44.zip) · 117.6 kB · SHA-256：`0fe0fabce45415ca8335b2b36df02110b1cbfa8d7d0b23cfb1cc24b4a91398ba`
 
-解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.43 同步，安装它不改变 REA 的商业授权要求。
+解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.44 同步，安装它不改变 REA 的商业授权要求。
 
 ## 🔑 授权
 
@@ -51,6 +51,16 @@
 | 远程控制 | SCPI over TCP/IP |
 | 输出 | 眼高 / 眼宽 / 余量 |
 
+
+## v2.0.44 更新
+
+- FFE、DFE 与 CTLE 优化按候选实际配置的接收噪声评分，并修正 GPU 评分中的高斯串扰。
+- 改善多任务完成与导出记录的一致性；失败或取消的导出保留已有文件，避免交付不完整结果。
+- 修复稀疏 DFE 配置恢复、输入失败后的旧通道残留，以及图片导出失败后的画布恢复。
+- 改善分割结果歧义提示、内存菜单和拖动状态同步，并保留噪声查询的完整精度。
+- 整合此前光强噪声、TDECQ 内存清理、画布适配与探针说明修复；已有授权继续有效。
+
+本版适用于 Windows。验证包括 323 项针对性源码检查、42 项实际编译模块检查，以及可见发行程序的 CPU/GPU 优化、稀疏 DFE 配置回读、波形导出和光学回放；四本手册已同步。结论限于记录中的输入和设置，不代表 Mac 移植验收。历史 450 Ω 失败及未重复的精确 Reset 桌面时序沿用既有豁免，不计作通过。GPU 加速仍为可选安装。
 
 ## v2.0.43 更新
 
