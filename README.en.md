@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_47.zip](http://106.14.76.130/REA/2.0.47/REA_dist_v2_0_47.zip)
+### ⬇️ [REA_dist_v2_0_48.zip](http://106.14.76.130/REA/2.0.48/REA_dist_v2_0_48.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.47 | 251.1 MB | 2026-11-20 | `192656bc9d1f95b644470df34620d82fa3b5f191a6a1d680ebfe14581e50dcba` |
+| v2.0.48 | 251.1 MB | 2026-11-20 | `5d4ca8401b1c6d5982222e8273d8d142b1b4e8b9eab9709542d2a3e35f26fe5b` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.47](http://106.14.76.130/REA-Skill/2.0.47/REA-Skill_dist_v2_0_47.zip) · 117.4 kB · SHA-256: `ac2d09ad1259e7593d6c10ac208f34b61722d3bae990a308f039ad38d5dde77b`
+[Download REA skill v2.0.48](http://106.14.76.130/REA-Skill/2.0.48/REA-Skill_dist_v2_0_48.zip) · 117.4 kB · SHA-256: `bb953091ea431e36a7cde867d9367cf7ac7ea56447909dc18cfbd7fe1cae2fd2`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.47 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.48 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,12 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.48 changes
+
+- When loading an optical reference receiver, REA checks its settings against the selected preset. Custom receivers retain their physical measurements. Named compliance results require a matching preset.
+
+Validation covers archived and regenerated custom receivers, a matching named preset, and the control with optional DFE disabled.
 
 ## v2.0.47 changes
 

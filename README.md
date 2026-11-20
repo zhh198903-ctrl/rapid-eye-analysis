@@ -10,11 +10,11 @@
 
 **本仓库不含软件本体。** 这是商业软件，源码不公开，仓库只作说明与下载入口。
 
-### ⬇️ [REA_dist_v2_0_47.zip](http://106.14.76.130/REA/2.0.47/REA_dist_v2_0_47.zip)
+### ⬇️ [REA_dist_v2_0_48.zip](http://106.14.76.130/REA/2.0.48/REA_dist_v2_0_48.zip)
 
 | 版本 | 大小 | 发布日期 | SHA-256 |
 |---|---|---|---|
-| v2.0.47 | 251.1 MB | 2026-11-20 | `192656bc9d1f95b644470df34620d82fa3b5f191a6a1d680ebfe14581e50dcba` |
+| v2.0.48 | 251.1 MB | 2026-11-20 | `5d4ca8401b1c6d5982222e8273d8d142b1b4e8b9eab9709542d2a3e35f26fe5b` |
 
 下载站首页（全部工具）：http://106.14.76.130
 
@@ -22,9 +22,9 @@
 
 ### 配套 AI skill（Claude Code / Codex）
 
-[下载 REA skill v2.0.47](http://106.14.76.130/REA-Skill/2.0.47/REA-Skill_dist_v2_0_47.zip) · 117.4 kB · SHA-256：`ac2d09ad1259e7593d6c10ac208f34b61722d3bae990a308f039ad38d5dde77b`
+[下载 REA skill v2.0.48](http://106.14.76.130/REA-Skill/2.0.48/REA-Skill_dist_v2_0_48.zip) · 117.4 kB · SHA-256：`bb953091ea431e36a7cde867d9367cf7ac7ea56447909dc18cfbd7fe1cae2fd2`
 
-解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.47 同步，安装它不改变 REA 的商业授权要求。
+解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.48 同步，安装它不改变 REA 的商业授权要求。
 
 ## 🔑 授权
 
@@ -51,6 +51,12 @@
 | 远程控制 | SCPI over TCP/IP |
 | 输出 | 眼高 / 眼宽 / 余量 |
 
+
+## v2.0.48 更新
+
+- 载入光学参考接收机配置时，系统会核对预设与实际参数。自定义接收机继续报告物理测量值，只有符合具名预设的配置才报告该预设的合规结果。
+
+验证范围为归档与重新生成的自定义接收机、匹配的具名预设和允许关闭 DFE 的对照配置。
 
 ## v2.0.47 更新
 
