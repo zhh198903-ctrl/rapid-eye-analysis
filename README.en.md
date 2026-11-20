@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_44.zip](http://106.14.76.130/REA/2.0.44/REA_dist_v2_0_44.zip)
+### ⬇️ [REA_dist_v2_0_45.zip](http://106.14.76.130/REA/2.0.45/REA_dist_v2_0_45.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.44 | 251.1 MB | 2026-11-15 | `0389c9c8642b9b67b6de736262ce7982a9282065f2ed69cc3c938cd07f54e828` |
+| v2.0.45 | 251.1 MB | 2026-11-20 | `086251fc6d03eae14b3bce650f2c42161739b347cdae0792dd75d2730c608610` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.44](http://106.14.76.130/REA-Skill/2.0.44/REA-Skill_dist_v2_0_44.zip) · 117.6 kB · SHA-256: `0fe0fabce45415ca8335b2b36df02110b1cbfa8d7d0b23cfb1cc24b4a91398ba`
+[Download REA skill v2.0.45](http://106.14.76.130/REA-Skill/2.0.45/REA-Skill_dist_v2_0_45.zip) · 117.7 kB · SHA-256: `dc302b27d98a8308ba70845dd8b1ba5fcbe889e4b36b8d0ad0846d83d0320880`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.44 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.45 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,12 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.45 changes
+
+- Corrects false zero eye heights for ideal multilevel signals with unequal symbol populations. PAM5 and PAM7 decision measurements, eye annotations and probe tables use the same measured levels.
+
+The visible Windows release was exercised over TCP SCPI using ideal PAM5 and PAM7 sources at 50 GBd, 16 samples/UI and PRBS9. Individual eye heights, widths and probe tables were checked. Both waveform exports matched their v2.0.44 counterparts byte for byte. All 16 focused tests passed on source and on the packaged estimator modules. Results cover the recorded inputs and settings.
 
 ## v2.0.44 changes
 
