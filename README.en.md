@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_46.zip](http://106.14.76.130/REA/2.0.46/REA_dist_v2_0_46.zip)
+### ⬇️ [REA_dist_v2_0_47.zip](http://106.14.76.130/REA/2.0.47/REA_dist_v2_0_47.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.46 | 251.1 MB | 2026-11-20 | `13e4126a3e641c1f3ac88ff27ac38d00f73d27c392ac709b0671ebfc32683d1c` |
+| v2.0.47 | 251.1 MB | 2026-11-20 | `192656bc9d1f95b644470df34620d82fa3b5f191a6a1d680ebfe14581e50dcba` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.46](http://106.14.76.130/REA-Skill/2.0.46/REA-Skill_dist_v2_0_46.zip) · 117.8 kB · SHA-256: `df1d6af918808d41d2251bf9b0678e1a753cac955758afede4e9b8b119a15c40`
+[Download REA skill v2.0.47](http://106.14.76.130/REA-Skill/2.0.47/REA-Skill_dist_v2_0_47.zip) · 117.4 kB · SHA-256: `ac2d09ad1259e7593d6c10ac208f34b61722d3bae990a308f039ad38d5dde77b`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.46 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.47 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,12 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.47 changes
+
+- After loading a saved four-port channel configuration in Normal mode, the first measurement uses its port pairing and signal-chain settings. For Expert optimizations started in the GUI, SCPI tracks the active job and returns its probe, node and applied taps on completion.
+
+Verified four-port configuration loading and probe identity across two successive optimizations using the Windows release GUI and TCP SCPI.
 
 ## v2.0.46 changes
 

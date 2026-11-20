@@ -10,11 +10,11 @@
 
 **本仓库不含软件本体。** 这是商业软件，源码不公开，仓库只作说明与下载入口。
 
-### ⬇️ [REA_dist_v2_0_46.zip](http://106.14.76.130/REA/2.0.46/REA_dist_v2_0_46.zip)
+### ⬇️ [REA_dist_v2_0_47.zip](http://106.14.76.130/REA/2.0.47/REA_dist_v2_0_47.zip)
 
 | 版本 | 大小 | 发布日期 | SHA-256 |
 |---|---|---|---|
-| v2.0.46 | 251.1 MB | 2026-11-20 | `13e4126a3e641c1f3ac88ff27ac38d00f73d27c392ac709b0671ebfc32683d1c` |
+| v2.0.47 | 251.1 MB | 2026-11-20 | `192656bc9d1f95b644470df34620d82fa3b5f191a6a1d680ebfe14581e50dcba` |
 
 下载站首页（全部工具）：http://106.14.76.130
 
@@ -22,9 +22,9 @@
 
 ### 配套 AI skill（Claude Code / Codex）
 
-[下载 REA skill v2.0.46](http://106.14.76.130/REA-Skill/2.0.46/REA-Skill_dist_v2_0_46.zip) · 117.8 kB · SHA-256：`df1d6af918808d41d2251bf9b0678e1a753cac955758afede4e9b8b119a15c40`
+[下载 REA skill v2.0.47](http://106.14.76.130/REA-Skill/2.0.47/REA-Skill_dist_v2_0_47.zip) · 117.4 kB · SHA-256：`ac2d09ad1259e7593d6c10ac208f34b61722d3bae990a308f039ad38d5dde77b`
 
-解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.46 同步，安装它不改变 REA 的商业授权要求。
+解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.47 同步，安装它不改变 REA 的商业授权要求。
 
 ## 🔑 授权
 
@@ -51,6 +51,12 @@
 | 远程控制 | SCPI over TCP/IP |
 | 输出 | 眼高 / 眼宽 / 余量 |
 
+
+## v2.0.47 更新
+
+- 在普通模式载入已保存的四端口通道配置后，首次测量使用该配置的端口配对和信号链设置。在专家模式从界面启动模块优化后，SCPI 跟踪当前作业，完成时返回对应探针、节点和实际写入的抽头。
+
+通过实际 Windows 发行包界面和 TCP SCPI 复核了四端口配置载入及连续两次优化的探针归属。
 
 ## v2.0.46 更新
 
