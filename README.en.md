@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_45.zip](http://106.14.76.130/REA/2.0.45/REA_dist_v2_0_45.zip)
+### ⬇️ [REA_dist_v2_0_46.zip](http://106.14.76.130/REA/2.0.46/REA_dist_v2_0_46.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.45 | 251.1 MB | 2026-11-20 | `086251fc6d03eae14b3bce650f2c42161739b347cdae0792dd75d2730c608610` |
+| v2.0.46 | 251.1 MB | 2026-11-20 | `13e4126a3e641c1f3ac88ff27ac38d00f73d27c392ac709b0671ebfc32683d1c` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.45](http://106.14.76.130/REA-Skill/2.0.45/REA-Skill_dist_v2_0_45.zip) · 117.7 kB · SHA-256: `dc302b27d98a8308ba70845dd8b1ba5fcbe889e4b36b8d0ad0846d83d0320880`
+[Download REA skill v2.0.46](http://106.14.76.130/REA-Skill/2.0.46/REA-Skill_dist_v2_0_46.zip) · 117.8 kB · SHA-256: `df1d6af918808d41d2251bf9b0678e1a753cac955758afede4e9b8b119a15c40`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.45 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.46 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,12 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.46 changes
+
+- Loading a configuration with an explicitly empty input list clears the previous channel and its eye results. Measurement then reports that no S-parameter file is loaded. Older configurations that omit the input file field retain the current channel.
+
+Verified an explicitly empty input configuration through the native menu and TCP SCPI in the Windows release. Channel and differential state, eye queries, a fresh measurement and the complete saved configuration were checked. Older configurations without an input list retained the active channel. All 13 focused tests passed on source and on the packaged module.
 
 ## v2.0.45 changes
 
