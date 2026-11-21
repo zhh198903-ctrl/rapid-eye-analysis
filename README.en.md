@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_50.zip](http://106.14.76.130/REA/2.0.50/REA_dist_v2_0_50.zip)
+### ⬇️ [REA_dist_v2_0_51.zip](http://106.14.76.130/REA/2.0.51/REA_dist_v2_0_51.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.50 | 251.2 MB | 2026-11-21 | `dc2fa07396129da3777790ffd8a8f734ecda73034d9d7462e1838c9d8b375a8c` |
+| v2.0.51 | 251.2 MB | 2026-11-21 | `53b067e77c60c1b19cbcae8fc3d058730f53bb2ade6e3a63ae91e7c497693d92` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.50](http://106.14.76.130/REA-Skill/2.0.50/REA-Skill_dist_v2_0_50.zip) · 117.5 kB · SHA-256: `03886695d40a565c9534b2aad9c8e08a5a35afc6908161af336c0b4291060630`
+[Download REA skill v2.0.51](http://106.14.76.130/REA-Skill/2.0.51/REA-Skill_dist_v2_0_51.zip) · 117.6 kB · SHA-256: `e6e525a80e448bfd79bcc7b865f609d95d0faaf514a053b53cada8c1522300d3`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.50 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.51 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,12 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.51 changes
+
+- Corrected multilevel source mapping in Expert optical and IBIS paths, adjacent optical power readings and the modulation order used by floating equalizers. Decision markers can be dragged at their displayed positions after centering. Expert manual edits target the selected eye of each probe. Closed-eye counts and individual SCPI readings now agree with the summary.
+
+Checked multilevel source mapping, adjacent optical power, floating equalization and centered decision editing on Windows. Verified open and closed measurements through the visible interface over TCP SCPI.
 
 ## v2.0.50 changes
 

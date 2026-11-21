@@ -10,11 +10,11 @@
 
 **本仓库不含软件本体。** 这是商业软件，源码不公开，仓库只作说明与下载入口。
 
-### ⬇️ [REA_dist_v2_0_50.zip](http://106.14.76.130/REA/2.0.50/REA_dist_v2_0_50.zip)
+### ⬇️ [REA_dist_v2_0_51.zip](http://106.14.76.130/REA/2.0.51/REA_dist_v2_0_51.zip)
 
 | 版本 | 大小 | 发布日期 | SHA-256 |
 |---|---|---|---|
-| v2.0.50 | 251.2 MB | 2026-11-21 | `dc2fa07396129da3777790ffd8a8f734ecda73034d9d7462e1838c9d8b375a8c` |
+| v2.0.51 | 251.2 MB | 2026-11-21 | `53b067e77c60c1b19cbcae8fc3d058730f53bb2ade6e3a63ae91e7c497693d92` |
 
 下载站首页（全部工具）：http://106.14.76.130
 
@@ -22,9 +22,9 @@
 
 ### 配套 AI skill（Claude Code / Codex）
 
-[下载 REA skill v2.0.50](http://106.14.76.130/REA-Skill/2.0.50/REA-Skill_dist_v2_0_50.zip) · 117.5 kB · SHA-256：`03886695d40a565c9534b2aad9c8e08a5a35afc6908161af336c0b4291060630`
+[下载 REA skill v2.0.51](http://106.14.76.130/REA-Skill/2.0.51/REA-Skill_dist_v2_0_51.zip) · 117.6 kB · SHA-256：`e6e525a80e448bfd79bcc7b865f609d95d0faaf514a053b53cada8c1522300d3`
 
-解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.50 同步，安装它不改变 REA 的商业授权要求。
+解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.51 同步，安装它不改变 REA 的商业授权要求。
 
 ## 🔑 授权
 
@@ -51,6 +51,12 @@
 | 远程控制 | SCPI over TCP/IP |
 | 输出 | 眼高 / 眼宽 / 余量 |
 
+
+## v2.0.51 更新
+
+- 修正 Expert 光链路和 IBIS 信号源的多电平码型映射、光功率相邻电平读数和浮动均衡优化的调制阶数。眼图居中后可在显示位置拖动判决点，Expert 可逐探针选择要编辑的眼。闭眼时 SCPI 的眼数、逐眼读数和汇总结果保持一致。
+
+在 Windows 上核对多电平源映射、相邻光功率、浮动均衡和居中判决编辑，并通过可见界面及 TCP SCPI 检查开眼与闭眼。
 
 ## v2.0.50 更新
 
