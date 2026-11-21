@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_48.zip](http://106.14.76.130/REA/2.0.48/REA_dist_v2_0_48.zip)
+### ⬇️ [REA_dist_v2_0_49.zip](http://106.14.76.130/REA/2.0.49/REA_dist_v2_0_49.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.48 | 251.1 MB | 2026-11-20 | `5d4ca8401b1c6d5982222e8273d8d142b1b4e8b9eab9709542d2a3e35f26fe5b` |
+| v2.0.49 | 251.1 MB | 2026-11-21 | `8af002d1fe82c16d2acfa3de240b5637fb8d826bb862272243be2bf2411c6b19` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.48](http://106.14.76.130/REA-Skill/2.0.48/REA-Skill_dist_v2_0_48.zip) · 117.4 kB · SHA-256: `bb953091ea431e36a7cde867d9367cf7ac7ea56447909dc18cfbd7fe1cae2fd2`
+[Download REA skill v2.0.49](http://106.14.76.130/REA-Skill/2.0.49/REA-Skill_dist_v2_0_49.zip) · 117.5 kB · SHA-256: `c9bb3118ee5c4dc062d3c7d0aa27b41473856c1e0def34f299fd491b100fd95e`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.48 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.49 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,12 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.49 changes
+
+- PAM eye ratios retain their configured length and precision through save, load and GUI generation. Clearing the ratios over SCPI restores uniform level spacing for subsequent generation and reload.
+
+Validation covers complete, short, empty and overlong PAM4 vectors, plus GUI and TCP SCPI measurements on the same demo channel.
 
 ## v2.0.48 changes
 

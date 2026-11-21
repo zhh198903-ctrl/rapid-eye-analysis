@@ -10,11 +10,11 @@
 
 **本仓库不含软件本体。** 这是商业软件，源码不公开，仓库只作说明与下载入口。
 
-### ⬇️ [REA_dist_v2_0_48.zip](http://106.14.76.130/REA/2.0.48/REA_dist_v2_0_48.zip)
+### ⬇️ [REA_dist_v2_0_49.zip](http://106.14.76.130/REA/2.0.49/REA_dist_v2_0_49.zip)
 
 | 版本 | 大小 | 发布日期 | SHA-256 |
 |---|---|---|---|
-| v2.0.48 | 251.1 MB | 2026-11-20 | `5d4ca8401b1c6d5982222e8273d8d142b1b4e8b9eab9709542d2a3e35f26fe5b` |
+| v2.0.49 | 251.1 MB | 2026-11-21 | `8af002d1fe82c16d2acfa3de240b5637fb8d826bb862272243be2bf2411c6b19` |
 
 下载站首页（全部工具）：http://106.14.76.130
 
@@ -22,9 +22,9 @@
 
 ### 配套 AI skill（Claude Code / Codex）
 
-[下载 REA skill v2.0.48](http://106.14.76.130/REA-Skill/2.0.48/REA-Skill_dist_v2_0_48.zip) · 117.4 kB · SHA-256：`bb953091ea431e36a7cde867d9367cf7ac7ea56447909dc18cfbd7fe1cae2fd2`
+[下载 REA skill v2.0.49](http://106.14.76.130/REA-Skill/2.0.49/REA-Skill_dist_v2_0_49.zip) · 117.5 kB · SHA-256：`c9bb3118ee5c4dc062d3c7d0aa27b41473856c1e0def34f299fd491b100fd95e`
 
-解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.48 同步，安装它不改变 REA 的商业授权要求。
+解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.49 同步，安装它不改变 REA 的商业授权要求。
 
 ## 🔑 授权
 
@@ -51,6 +51,12 @@
 | 远程控制 | SCPI over TCP/IP |
 | 输出 | 眼高 / 眼宽 / 余量 |
 
+
+## v2.0.49 更新
+
+- PAM 眼比例在保存、载入和窗口生成眼图时保留所设的项数与精度。通过 SCPI 清空比例后，窗口生成和再次载入均使用等间距电平。
+
+验证范围包括 PAM4 的完整、短、空和超长向量，以及同一演示通道下的 GUI 和 TCP SCPI 眼图读数。
 
 ## v2.0.48 更新
 
