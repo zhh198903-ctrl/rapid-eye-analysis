@@ -10,11 +10,11 @@ Computes eye diagrams straight from S-parameters. Normal and Expert share FFE / 
 
 **This repository does not ship the software itself.** It is a commercial product with closed source; this repo is only a description and download entry.
 
-### ⬇️ [REA_dist_v2_0_49.zip](http://106.14.76.130/REA/2.0.49/REA_dist_v2_0_49.zip)
+### ⬇️ [REA_dist_v2_0_50.zip](http://106.14.76.130/REA/2.0.50/REA_dist_v2_0_50.zip)
 
 | Version | Size | Released | SHA-256 |
 |---|---|---|---|
-| v2.0.49 | 251.1 MB | 2026-11-21 | `8af002d1fe82c16d2acfa3de240b5637fb8d826bb862272243be2bf2411c6b19` |
+| v2.0.50 | 251.2 MB | 2026-11-21 | `dc2fa07396129da3777790ffd8a8f734ecda73034d9d7462e1838c9d8b375a8c` |
 
 All tools: http://106.14.76.130
 
@@ -22,9 +22,9 @@ The download site supports resumable downloads (HTTP Range).
 
 ### Companion AI skill (Claude Code / Codex)
 
-[Download REA skill v2.0.49](http://106.14.76.130/REA-Skill/2.0.49/REA-Skill_dist_v2_0_49.zip) · 117.5 kB · SHA-256: `c9bb3118ee5c4dc062d3c7d0aa27b41473856c1e0def34f299fd491b100fd95e`
+[Download REA skill v2.0.50](http://106.14.76.130/REA-Skill/2.0.50/REA-Skill_dist_v2_0_50.zip) · 117.5 kB · SHA-256: `03886695d40a565c9534b2aad9c8e08a5a35afc6908161af336c0b4291060630`
 
-Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.49 and does not change REA licensing requirements.
+Extract the archive and copy the `rea-scpi` folder to `%USERPROFILE%/.agents/skills/` (Codex) or `%USERPROFILE%/.claude/skills/` (Claude Code). The skill matches v2.0.50 and does not change REA licensing requirements.
 
 ## 🔑 License
 
@@ -51,6 +51,12 @@ This software is proprietary; the source code is not published.
 | Remote control | SCPI over TCP/IP |
 | Output | Eye height / eye width / margin |
 
+
+## v2.0.50 changes
+
+- Corrected automatic PAM level estimation when distinct received levels have unequal sample counts. The previous estimate could count one level twice, report a closed eye in PAM5, PAM6 or PAM7, and change the eye mask verdict.
+
+Checked automatic levels, per-eye results and waveforms for PAM3 through PAM8 on the recorded demo channel, with a high-loss channel as a closed-eye control.
 
 ## v2.0.49 changes
 

@@ -10,11 +10,11 @@
 
 **本仓库不含软件本体。** 这是商业软件，源码不公开，仓库只作说明与下载入口。
 
-### ⬇️ [REA_dist_v2_0_49.zip](http://106.14.76.130/REA/2.0.49/REA_dist_v2_0_49.zip)
+### ⬇️ [REA_dist_v2_0_50.zip](http://106.14.76.130/REA/2.0.50/REA_dist_v2_0_50.zip)
 
 | 版本 | 大小 | 发布日期 | SHA-256 |
 |---|---|---|---|
-| v2.0.49 | 251.1 MB | 2026-11-21 | `8af002d1fe82c16d2acfa3de240b5637fb8d826bb862272243be2bf2411c6b19` |
+| v2.0.50 | 251.2 MB | 2026-11-21 | `dc2fa07396129da3777790ffd8a8f734ecda73034d9d7462e1838c9d8b375a8c` |
 
 下载站首页（全部工具）：http://106.14.76.130
 
@@ -22,9 +22,9 @@
 
 ### 配套 AI skill（Claude Code / Codex）
 
-[下载 REA skill v2.0.49](http://106.14.76.130/REA-Skill/2.0.49/REA-Skill_dist_v2_0_49.zip) · 117.5 kB · SHA-256：`c9bb3118ee5c4dc062d3c7d0aa27b41473856c1e0def34f299fd491b100fd95e`
+[下载 REA skill v2.0.50](http://106.14.76.130/REA-Skill/2.0.50/REA-Skill_dist_v2_0_50.zip) · 117.5 kB · SHA-256：`03886695d40a565c9534b2aad9c8e08a5a35afc6908161af336c0b4291060630`
 
-解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.49 同步，安装它不改变 REA 的商业授权要求。
+解压后，将 `rea-scpi` 文件夹放入 `%USERPROFILE%/.agents/skills/`（Codex）或 `%USERPROFILE%/.claude/skills/`（Claude Code）。技能说明与 v2.0.50 同步，安装它不改变 REA 的商业授权要求。
 
 ## 🔑 授权
 
@@ -51,6 +51,12 @@
 | 远程控制 | SCPI over TCP/IP |
 | 输出 | 眼高 / 眼宽 / 余量 |
 
+
+## v2.0.50 更新
+
+- 修正 PAM 自动电平估计在接收电平清晰分开、各档样本数不均时重复识别同一档的问题。该问题可导致 PAM5、PAM6 和 PAM7 将张开的眼误报为闭合，并改变眼图模板判定。
+
+在同一演示信道检查 PAM3 至 PAM8 的自动电平、逐眼结果及波形，并用高损信道核对真实闭眼。
 
 ## v2.0.49 更新
 
